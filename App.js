@@ -198,6 +198,25 @@ console.log(p1);
 console.log(p2.Dob.getFullYear());
 
 
+//Class
+class P3{
+    constructor(Fisrtname,LastName,Dob){
+    this.Fisrtname=Fisrtname;
+    this.LastName-LastName;
+    this.Dob=new Date(Dob);
+    }
+
+    getBirthYear(){
+       return this.Dob.getFullYear();
+
+    }
+    getFullYear() 
+    {
+        return this.getFullYear();
+    }
+}
+
+
 
 
 
