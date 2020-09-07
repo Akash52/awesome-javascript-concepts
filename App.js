@@ -190,10 +190,14 @@ function Person(Fisrtname,LastName,Dob){
 
 }
 
+//Instantiate object 
+
 const p1=new Person('Akash','Chauhan','15-08-200');
 const p2=new Person('Jigar','Chauhan','3-6-2000');
 console.log(p1);
 console.log(p2.Dob.getFullYear());
+
+
 
 
 
