@@ -216,39 +216,30 @@ class P3{
     }
 }
 
+//Arrow Functions
 
+//Single Expression
+var add = (a,b) => a+b;
+//Single Argument
+var odd = n => n % 2;
+//No Arguments
+var random = () => Math.random();
+//Multiple Expressions
+var shout = s => {
+    s = s.toUpperCase();
+    s = s + '!';
+    return s;
+  }
 
+  //Lexical this
 
+  function Counter () {
+    this.count = 0;
+    setInterval(() => this.count++, 1000);
+  }
+  
+  var counter = new Counter();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
 
 
