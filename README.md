@@ -1,6 +1,7 @@
 # JavaScript-A-to-Z
+![](https://img.shields.io/badge/language-javascript-yellow.svg)
 
-In these repository you will find basic to andvance javascript Concept !!!
+### In these repository you will find basic to andvance javascript Concept !!!
 
 ### 1.Print Element & Error
 ```
