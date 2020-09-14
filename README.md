@@ -4,14 +4,14 @@
 ### In these repository you will find basic to andvance javascript Concept !!!
 
 ### 1.Print Element & Error
-```
+```javascript
 console.log("Hello World");
 console.error('this error');
 console.warn('sdsd');
 ```
 ### 2.Variable var,let,const
 >Let Re-Assign Value,Const Does not assign value
-```
+```javascript
 let age=30;
 age=31;
 console.log(age);
@@ -20,7 +20,7 @@ age=31;
 console.log(old);
 ```
 ### 3.Data Type String,Number,Boolean,null,undefined,Symbol
-```
+```javascript
 const name='Akash';
 const num=30;
 const rating=4.5;
@@ -39,11 +39,11 @@ console.log(typeof z);
 ### 4.String Operation
 
 #### Old Way Concatenation
-```
+```javascript
 console.log('My name is'+ name +' and my age is :'+age);
 ```
 #### New Way Template String
-```
+```javascript
 const hello=`My Name is ${name} and i am ${age}`;
 console.log(hello);
 const s='Hello World';
