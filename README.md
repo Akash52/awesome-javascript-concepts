@@ -84,4 +84,32 @@ fruits.unshift('Watermalon');
 ```javascript
 console.log(fruits.indexOf('Mango'));
 ```
+### 6.Object And Literals
+```javascript
+const person={
+    fisrtname:'Akash',
+    lastName:'Chauhan',
+    age: 20,
+    hobbies:['music','sports'],
+    addess:{
+        street:"Bhapara",
+        Village:"Gheti",
+        state:"Gujarat"
+    }
+}
+console.log(person);
+```
+##### You can Also Acces Separate Value
+
+```javascript
+console.log(person.fisrtname,person.lastName); 
+console.log(person.hobbies[1]);
+console.log(person.addess.Village);
+```
+
+#### You can Add New Property 
+```javascript
+person.email='ac8572611@gmail.com';
+console.log(person);
+```
 
