@@ -53,7 +53,7 @@ console.log(s.toUpperCase());
 console.log(s.substring(0,5).toUpperCase());
 console.log(s.split(''));
 ```
-#### 5.Arrays -variable that hold multiple Values
+### 5.Arrays -variable that hold multiple Values
 ```javascript
 const numbers=new Array(1,2,3,4,5);
 console.log(numbers);
