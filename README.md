@@ -58,12 +58,12 @@ console.log(s.split(''));
 const numbers=new Array(1,2,3,4,5);
 console.log(numbers);
 ```
-##### Array Multiple Data Type Supprt in single variabl
+##### Array Multiple Data Type Support in single variable
 ```javascript
 const fruits=['Apple','Orange','Mango','Graps',30,40];
 console.log(fruits);
 ```
-##### You can Also Manupulate your Array
+##### You can Also Manipulate your Array
 ```javascript
 fruits[3]='Banana';
 console.log(fruits);
