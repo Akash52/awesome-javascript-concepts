@@ -53,3 +53,35 @@ console.log(s.toUpperCase());
 console.log(s.substring(0,5).toUpperCase());
 console.log(s.split(''));
 ```
+#### 5.Arrays -variable that hold multiple Values
+```javascript
+const numbers=new Array(1,2,3,4,5);
+console.log(numbers);
+```
+##### Array Multiple Data Type Supprt in single variabl
+```javascript
+const fruits=['Apple','Orange','Mango','Graps',30,40];
+console.log(fruits);
+```
+##### You can Also Manupulate your Array
+```javascript
+fruits[3]='Banana';
+console.log(fruits);
+```
+##### Array index always start with 0
+```javascript
+console.log(fruits[1]);
+```
+##### You can also PUSH Element in Array
+```javascript
+fruits.push('Pinaple');
+```
+##### Element Add in Starting
+```javascript
+fruits.unshift('Watermalon');
+```
+##### Find Index Number
+```javascript
+console.log(fruits.indexOf('Mango'));
+```
+
