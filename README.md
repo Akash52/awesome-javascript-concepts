@@ -112,4 +112,61 @@ console.log(person.addess.Village);
 person.email='ac8572611@gmail.com';
 console.log(person);
 ```
+### 7.Using Array Todo LIST
+```javascript
+const todos=[
+    {
+        id:1,
+        text:'Take out trash',
+        isCompleted:true
+    },
+    {
+        id:2,
+        text:'Program Done',
+        isCompleted:true
+    },
+    {
+        id:3,
+        text:'JAVASCRIPT',
+        isCompleted:false
+    },
 
+];
+
+console.log(todos);
+
+console.log(todos[0].text);
+```
+### 8.Loops
+
+#### For Loops
+```javascript
+for(let i=0;i<5;i++)
+{
+    console.log(`For loop number:${i}`);
+}
+```
+#### While Loop
+```javascript
+let i=0;
+while(i<10)
+{
+    console.log(`whilw loop no:${i}`);
+    i++;
+}
+```
+
+### 9.Compare == & ===
+```javascript
+const c='10';
+
+if(c===10)
+{
+    console.log('x is 10');
+}
+const d=10;
+if(d==10)
+{
+    console.log('d is 10');
+}
+```
