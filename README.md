@@ -170,3 +170,33 @@ if(d==10)
     console.log('d is 10');
 }
 ```
+
+### 10.Terniary Operator 
+```javascript
+const e=11;
+const color =e>10?'red':'blue';
+```
+
+### 11.Switch Statement
+```javascript
+switch(color)
+{
+    case 'red':
+    console.log('color is red');
+    break;
+    case 'blue':
+        console.log('color is blue');
+        break;
+        default:
+            console.log('color is NOT red or blue ');
+            break;
+}
+```
+### 12. function
+```javascript
+
+function addSum(num1,num2){
+    console.log(num1+num2);
+}
+addSum(5,7)
+```
