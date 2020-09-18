@@ -200,3 +200,48 @@ function addSum(num1,num2){
 }
 addSum(5,7)
 ```
+
+### 13. Arrow Function
+```javascript
+const Addsum=(n1,n2)=>{
+    console.log(n1+n2);
+}
+Addsum(5,8);
+```
+## 14.Consructor function
+```javascript
+function Person(Fisrtname,LastName,Dob){
+    this.Fisrtname=Fisrtname;
+    this.LastName-LastName;
+    this.Dob=new Date(Dob);
+
+}
+```
+### 15.Instantiate object 
+```javascript
+const p1=new Person('Akash','Chauhan','15-08-200');
+const p2=new Person('Jigar','Chauhan','3-6-2000');
+console.log(p1);
+console.log(p2.Dob.getFullYear());
+```
+### 16.Class
+```javascript
+class P3{
+    constructor(Fisrtname,LastName,Dob){
+    this.Fisrtname=Fisrtname;
+    this.LastName-LastName;
+    this.Dob=new Date(Dob);
+    }
+
+    getBirthYear(){
+       return this.Dob.getFullYear();
+
+    }
+    getFullYear() 
+    {
+        return this.getFullYear();
+    }
+}
+```
+
+#ES6
