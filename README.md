@@ -300,3 +300,58 @@ function onSubmit(e) {
    
 }
 ```
+
+# ES6
+
+
+### Arrow Functions
+##### Single Expression
+```javascript
+var add = (a,b) => a+b;
+```
+##### Single Argument
+```javascript
+var odd = n => n % 2;
+```
+
+##### No Arguments
+```javascript
+var random = () => Math.random();
+```
+
+##### Multiple Expressions
+```javascript
+var shout = s => {
+  s = s.toUpperCase();
+  s = s + '!';
+  return s;
+}
+```
+##### Lexical this
+```javascript
+function Counter () {
+  this.count = 0;
+  setInterval(() => this.count++, 1000);
+}
+
+var counter = new Counter();
+```
+##### Concise Functional Iteration
+```javascript
+var data = ['one', 'two', 'three'];
+var processed = data
+  .map(s => s.length)
+  .filter(length => length < 5);
+  ```
+
+
+
+
+
+
+
+
+
+
+
+
