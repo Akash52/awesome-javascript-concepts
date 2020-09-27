@@ -38,11 +38,11 @@ console.log(typeof z);
 ```
 ### 4.String Operation
 
-#### Old Way Concatenation
+##### Old Way Concatenation
 ```javascript
 console.log('My name is'+ name +' and my age is :'+age);
 ```
-#### New Way Template String
+##### New Way Template String
 ```javascript
 const hello=`My Name is ${name} and i am ${age}`;
 console.log(hello);
@@ -107,7 +107,7 @@ console.log(person.hobbies[1]);
 console.log(person.addess.Village);
 ```
 
-#### You can Add New Property 
+##### You can Add New Property 
 ```javascript
 person.email='ac8572611@gmail.com';
 console.log(person);
@@ -139,14 +139,14 @@ console.log(todos[0].text);
 ```
 ### 8.Loops
 
-#### For Loops
+##### For Loops
 ```javascript
 for(let i=0;i<5;i++)
 {
     console.log(`For loop number:${i}`);
 }
 ```
-#### While Loop
+##### While Loop
 ```javascript
 let i=0;
 while(i<10)
@@ -244,7 +244,7 @@ class P3{
 }
 ```
 
-## //DOM (Document object Model)
+## DOM (Document object Model)
 
 ### 1.Single Element Selector
 ```javascript
