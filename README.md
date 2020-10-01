@@ -8,7 +8,7 @@
 <!-- toc -->
 
   * [console log](#console-log)
-  * [Single Argument](#single-argument)
+  * [DataType,Naming,Rules](#sDataType-Naming-Rules)
   * [No Arguments](#no-arguments)
   * [Multiple Expressions](#multiple-expressions)
   * [Lexical this](#lexical-this)
@@ -42,4 +42,62 @@ multi
 line
 comments
 */
+```
+### DataType,Naming,Rules
+```javascript
+
+//var,let,const
+
+var name="Akash Doe";
+console.log(name);
+name="Steave smith"; //Re-assing variable
+console.log(name);
+
+//Initialize variable
+
+var greeting;
+console.log(greeting); //undefined error
+greeting='Hello';
+console.log(greeting);
+
+//Letters,Numbers,_ string ,variable rules
+Can not start with number
+var 1name='John'; //Return error
+var _name='John'; //these is valid
+
+//Multi word vars
+
+var firtsName='Akash'; //Camel case
+var first_name='Sara';  //Underscore
+var FirstName='Tome';   // Pascal case
+var firstname; //Not recomneded 
+
+//LET
+let name;
+let name="Akash Doe";
+console.log(name);
+name="Steave smith"; //Re-assing variable
+console.log(name);
+
+//Const
+
+const name="Akash Doe";
+console.log(name);
+name="Steave smith"; // can't Re-assing variable
+const greeting;
+
+Const
+const Person={
+    name: 'Akash',
+    age : '20'
+}
+Person.name='Sara';
+Person.age='30';
+
+console.log(Person);
+
+const numbers=[1,2,3,4,5];
+numbers.push(6);
+
+console.log(numbers);
 ```
