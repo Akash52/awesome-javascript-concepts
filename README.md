@@ -8,7 +8,7 @@
 <!-- toc -->
 
   * [console log](#console-log)
-  * [DataType,Naming,Rules](#sDataType-Naming-Rules)
+  * [DataType,Naming,Rules](#DataType,Naming,Rules)
   * [No Arguments](#no-arguments)
   * [Multiple Expressions](#multiple-expressions)
   * [Lexical this](#lexical-this)
