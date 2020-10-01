@@ -43,7 +43,7 @@ line
 comments
 */
 ```
-### DataType,Naming,Rules
+### DataType Naming Rules
 ```javascript
 
 //var,let,const
