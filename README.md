@@ -9,7 +9,7 @@
 
   * [console log](#console-log)
   * [DataType,Naming,Rules](#DataType-Naming-Rules)
-  * [No Arguments](#no-arguments)
+  * [Datatype,PRIMITIVE & REFERENCE](#Datatype-PRIMITIVE-REFERENCE)
   * [Multiple Expressions](#multiple-expressions)
   * [Lexical this](#lexical-this)
   * [Concise Functional Iteration](#concise-functional-iteration)
@@ -100,4 +100,46 @@ const numbers=[1,2,3,4,5];
 numbers.push(6);
 
 console.log(numbers);
+```
+
+### Datatype PRIMITIVE REFERENCE
+```javascript
+//PRIMITIVE
+
+//String
+const name = 'John doe';
+//Number
+const age = 45;
+//Boolean
+const hask = true;
+//Null
+const car = null;
+//Undefined
+let test;
+//Symbol
+const sym = Symbol();
+
+console.log(typeof name);
+console.log(typeof age);
+console.log(typeof hask);
+console.log(typeof car);
+console.log(typeof test);
+console.log(typeof sym);
+
+//REFERENCE
+
+//Array
+const hobbies = ['movie', 'music'];
+//Object literal
+const address = {
+
+    city: 'Rajkot',
+    state: 'GUj'
+
+}
+
+console.log(typeof hobbies);
+console.log(address);
+const today = new Date();
+console.log(today);
 ```
