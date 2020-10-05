@@ -11,7 +11,7 @@
   * [DataType,Naming,Rules](#DataType-Naming-Rules)
   * [Datatype,PRIMITIVE & REFERENCE](#Datatype-PRIMITIVE-REFERENCE)
   * [Type conversion](#Type-conversion)
-  * [Numbers  & Math object](#Numbers-&-Math-object)
+  * [Numbers  & Math object](#Numbers-Math-object)
   * [Concise Functional Iteration](#concise-functional-iteration)
 
 <!-- tocstop -->
@@ -186,7 +186,7 @@ console.log(typeof val);
 //console.log(val.length);
 console.log(val.toFixed());
 ```
-### Numbers  & Math object
+### Numbers Math object
 
 const num1 = 100;
 const num2 = 50;
