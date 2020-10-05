@@ -187,7 +187,7 @@ console.log(typeof val);
 console.log(val.toFixed());
 ```
 ### Numbers Math object
-
+```javascript
 const num1 = 100;
 const num2 = 50;
 let val;
@@ -217,3 +217,4 @@ val = Math.floor(Math.random() * 20 + 1);
 
 
 console.log(val);
+```
