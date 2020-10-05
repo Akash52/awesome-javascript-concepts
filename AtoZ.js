@@ -162,14 +162,40 @@ const sum = val1 + val2;
 console.log(sum);
 console.log(typeof sum);
 
-
-
-
-
-
-
 //Output 
 console.log(val);
 console.log(typeof val);
 //console.log(val.length);
 console.log(val.toFixed());
+
+//Numbers  & Math object
+
+const num1 = 100;
+const num2 = 50;
+let val;
+
+//Simple math with numbers
+
+val = num1 + num2;
+val = num1 * num2;
+val = num1 - num2;
+val = num1 / num2;
+val = num1 % num2;
+
+//Math object
+
+val = Math.PI;
+val = Math.round(2.8);
+val = Math.ceil(2.4);
+val = Math.floor(2.8);
+val = Math.sqrt(16);
+val = Math.abs(-3);
+val = Math.pow(8, 2);
+val = Math.min(2, 3, 4, 5, 4, 6);
+val = Math.max(45, 34, 54, 5);
+val = Math.random();
+val = Math.floor(Math.random() * 20 + 1);
+
+
+
+console.log(val);
