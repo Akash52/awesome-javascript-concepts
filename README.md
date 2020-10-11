@@ -7,12 +7,12 @@
 
 <!-- toc -->
 
-  * [console log](#console-log)
+  * [Console log](#console-log)
   * [DataType,Naming,Rules](#DataType-Naming-Rules)
   * [Datatype,PRIMITIVE & REFERENCE](#Datatype-PRIMITIVE-REFERENCE)
   * [Type conversion](#Type-conversion)
   * [Numbers  & Math object](#Numbers-Math-object)
-  * [string and its operation](#string-and-its-operation)
+  * [String and its operation](#string-and-its-operation)
 
 <!-- tocstop -->
 ### console log
@@ -257,8 +257,8 @@ val=lastname.toLowerCase();
 val=firstname.substring(0,4);
 
 //slice
-val=firstname.slice(0,4); //you can use neagtive number
-val=firstname.slice(-3);
+val=firstname.slice(0,4); 
+val=firstname.slice(-3); //you can use negative number
 
 //Split
 val=str.split(' ');
@@ -268,7 +268,7 @@ val=tags.split(',')
 val=str.replace('Akash','jack');
 
 //Include
-val=str.includes('Hello'); //If availble then return true
+val=str.includes('Hello'); //If available then return true
 val=str.includes('foo');  //if not false
 
 console.log(val);
