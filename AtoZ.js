@@ -1,3 +1,4 @@
+
 //Log to consloe 
 console.log('Hello world');
 console.log(123);
@@ -18,10 +19,11 @@ console.log('Hello world');
 console.log('Hello world');
 console.timeEnd('Hello'); //Function End
 
-
+/*
 multi
 line
 comments
+*/
 
 
 //DataType,Naming,Rules
@@ -197,5 +199,59 @@ val = Math.random();
 val = Math.floor(Math.random() * 20 + 1);
 
 
+
+console.log(val);
+
+
+
+// string and its operation
+
+const firstname = 'Akash';
+const lastname = 'Chauhan';
+let val;
+val = firstname + lastname;
+
+//Concatenation
+val = firstname + '' + lastname;
+
+//Append
+val = 'Brad ';
+val += ' Traversy';
+const age=50;
+const str='Hello there my name is Akash';
+
+val = 'Hello,my name is' + firstname + 'and I am ' + age;
+const tags='web design,web development,full stack,mean stack,mern stack';
+
+//Escaping
+val = 'That\'s awesome, I can\'t wait';
+
+//Length
+val=firstname.length;
+
+//concat
+val=firstname.concat(' ',lastname);
+
+//Change case
+val=firstname.toUpperCase();
+val=lastname.toLowerCase();
+
+//Sub string
+val=firstname.substring(0,4);
+
+//slice
+val=firstname.slice(0,4); //you can use neagtive number
+val=firstname.slice(-3);
+
+//Split
+val=str.split(' ');
+val=tags.split(',')
+
+//Replace
+val=str.replace('Akash','jack');
+
+//Include
+val=str.includes('Hello'); //If availble then return true
+val=str.includes('foo');  //if not false
 
 console.log(val);
