@@ -1,4 +1,4 @@
-
+/*
 //Log to consloe 
 console.log('Hello world');
 console.log(123);
@@ -23,7 +23,7 @@ console.timeEnd('Hello'); //Function End
 multi
 line
 comments
-*/
+
 
 
 //DataType,Naming,Rules
@@ -255,3 +255,40 @@ val=str.includes('Hello'); //If availble then return true
 val=str.includes('foo');  //if not false
 
 console.log(val);
+*/
+
+//Template string
+
+const name='Jhon';
+const age='30';
+const job='Web Developer';
+const city='Rajkot';
+let html;
+
+//Without template string (es5)
+
+html='<ul><li>Name :'+ name +'</li><li>Age:'+ age + '</li><li>Job:'+job+'</li><li>City:'+city+'</li></ul>';
+document.body.innerHTML=html;
+
+//With template string (es6)
+
+function hello(){
+    return 'hello how are you';
+}
+
+html=`
+<ul>
+<li>Name: ${name}</li>
+<li>Age: ${age}</li>
+<li>Job: ${job}</li>
+<li>City: ${city}</li>
+<li>${hello()}</li>
+<li>${age>30 ? 'Over 30':'Under 30'}</li>
+</ul>
+`;
+
+document.body.innerHTML=html;
+
+
+
+

@@ -4,15 +4,6 @@ body {
     background-color: rgb(182, 199, 163));
 }
 
-.container {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    background-color: rgba(117, 207, 42, 0.5);
-    color: rgb(0, 0, 2);
-}
-
 .fl {
     height: 200px;
     display: flex;
