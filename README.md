@@ -273,3 +273,100 @@ val=str.includes('foo');  //if not false
 
 console.log(val);
 ```
+
+### Template string
+```javascript
+
+const name='Jhon';
+const age='30';
+const job='Web Developer';
+const city='Rajkot';
+let html;
+
+//Without template string (es5)
+
+html='<ul><li>Name :'+ name +'</li><li>Age:'+ age + '</li><li>Job:'+job+'</li><li>City:'+city+'</li></ul>';
+document.body.innerHTML=html;
+
+//With template string (es6)
+
+function hello(){
+    return 'hello how are you';
+}
+
+html=`
+<ul>
+<li>Name: ${name}</li>
+<li>Age: ${age}</li>
+<li>Job: ${job}</li>
+<li>City: ${city}</li>
+<li>${hello()}</li>
+<li>${age>30 ? 'Over 30':'Under 30'}</li>
+</ul>
+`;
+
+document.body.innerHTML=html;
+```
+### Create some arrays
+```javascript
+const numbers=[42,34,45,33,32,34,43];
+const num2= new Array(22,34,433,3,43,43);
+const fruit=['Apple','Banana','Orange','Pear'];
+const mixed=[24,24,54,'Akash',44,'Chauhan',true,undefined,null];
+
+
+
+//Get array length
+
+val=numbers.length;
+
+//Check if is array
+val = Array.isArray(numbers);
+
+// Get single value 
+val=numbers[3];
+val =numbers[0];
+//Insert into array 
+numbers[2]=100;
+//Find index of value
+val=numbers.indexOf(43);
+
+//MUTING ARRAYS
+
+//Add on to end 
+numbers.push(250);
+//Add on to front
+numbers.unshift(120);
+//Take of from end
+numbers.pop();
+//Take from front
+numbers.shift();
+//Splice values 
+numbers.splice(1,3);
+//reverse 
+numbers.reverse();
+//Concatenate array
+val=numbers.concat(num2);
+//Sorting array
+val=numbers.sort();
+val=fruit.sort();
+//Use the "compare funtion"
+val=numbers.sort(function(x,y){
+    return x-y;
+});
+
+//Find 
+function under50(num){
+    return num<50;
+}
+
+val =numbers.find(under50);
+ 
+console.log(numbers);
+console.log(val);
+```
+
+
+
+
+
