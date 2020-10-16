@@ -346,23 +346,6 @@ function under50(num){
 }
 
 val =numbers.find(under50);
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 console.log(numbers);
 console.log(val);
