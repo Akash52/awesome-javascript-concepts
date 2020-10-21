@@ -1,4 +1,4 @@
-
+/*
 //Log to consloe 
 console.log('Hello world');
 console.log(123);
@@ -42,9 +42,9 @@ greeting = 'Hello';
 console.log(greeting);
 
 //Letters,Numbers,_ string ,variable rules
-Can not start with number
-var 1 name = 'John'; //Return error
-var _name = 'John'; //these is valid
+//Can not start with number
+var  name = 'John'; //Return error
+var name = 'John'; //these is valid
 
 //Multi word vars
 
@@ -398,11 +398,21 @@ for(let i=0;i<people.length;i++){
     console.log(people[i]);
     console.log(people[i].name);
 }
+*/
+//Date and time
+let val;
+const today=new Date();
+let birthday= new Date('9-18-1981');
+val=birthday;
 
+val=today.getDate();
+val=today.getMonth();
+val=today.getDay();
+val=today.getFullYear();
+val=today.getHours();
+val=today.getMinutes();
+val=today.getMilliseconds();
+val=today.getTime();
+val=today.getSeconds();
 
-
-
-
-
-
-
+console.log(val);
