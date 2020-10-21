@@ -6,8 +6,7 @@ ctx.fillStyle = "red";
 ctx.fillRect(20, 20, 150, 100);
 ctx.fillStyle = "blue";
 ctx.fillRect(200, 20, 150, 100);
-ctx.fillStyle = "white";
-ctx.fillRect(400, 20, 150, 100);
+
 //StrokeReact()
 
 ctx.linewidth = 5;
@@ -20,4 +19,10 @@ ctx.clearRect(25, 25, 140, 90);
 //Filltext()
 ctx.font = "25px Arial";
 ctx.fillStyle = "purple";
-ctx.fillText("Hello World", 400, 100);
+ctx.fillText("Hello World", 400, 50);
+
+//stokeText()
+
+ctx.linewidth = 1;
+ctx.strokeStyle = "orange";
+ctx.strokeText("Hello World", 400, 100);
