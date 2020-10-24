@@ -420,34 +420,63 @@ console.log(val);
 //Equal to
 const id='100';
 
-if(id==100){
-    console.log('CORRECT');
+// if(id==100){
+//     console.log('CORRECT');
+// }
+// else{
+//     console.log('INCORRECT')
+// }
+// //Not Equal to
+// if(id!=100){
+//     console.log('CORRECT');
+// }
+// else{
+//     console.log('INCORRECT')
+// }
+
+// //EQUAL TO VALUE & TYPE
+
+// if(id===100){
+//     console.log('CORRECT');
+// }
+// else{   //===  Compare Type and Value
+//     console.log('INCORRECT')
+// }
+
+// if(id!==100){
+//     console.log('CORRECT');
+// }
+// else{   //===  Compare Type and Value
+//     console.log('INCORRECT')
+// }
+//TEST IF UNDEFINED
+// if(typeof id!=='undefined'){
+//     console.log(`The ID is ${id}`);
+// }
+// else{
+//     console.log(`NO ID`);
+// }
+//GREATER OR LESS THAN
+// if(id>100)
+// {
+//     console.log('YES')
+// }
+// else{
+//     console.log('NO');
+// }
+//IF ELSE
+const color='RED';
+
+if(color==='RED')
+{
+    console.log('Color is red');
+}
+else if(color==='BLUE'){
+    console.log('Color is blue');
 }
 else{
-    console.log('INCORRECT')
-}
-//Not Equal to
-if(id!=100){
-    console.log('CORRECT');
-}
-else{
-    console.log('INCORRECT')
+    console.log('YELLOW')
 }
 
-//EQUAL TO VALUE & TYPE
-
-if(id===100){
-    console.log('CORRECT');
-}
-else{   //===  Compare Type and Value
-    console.log('INCORRECT')
-}
-
-if(id!==100){
-    console.log('CORRECT');
-}
-else{   //===  Compare Type and Value
-    console.log('INCORRECT')
-}
 
 
