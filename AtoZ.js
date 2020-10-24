@@ -418,7 +418,7 @@ val=today.getSeconds();
 console.log(val);
 */
 //Equal to
-const id='100';
+const id=100;
 
 // if(id==100){
 //     console.log('CORRECT');
@@ -482,21 +482,24 @@ const id='100';
 const name='Steave';
 const age=20;
 
-//AND &&
-if(age>0 && age<12)
-{
-    console.log(`${name} is a child`);
-}else if(age>=13 && age<=19){
-    console.log(`${name} is a teneger`);
-}
-else{
-    console.log(`${name} is adult`);
-}
-//OR || 
+// //AND &&
+// if(age>0 && age<12)
+// {
+//     console.log(`${name} is a child`);
+// }else if(age>=13 && age<=19){
+//     console.log(`${name} is a teneger`);
+// }
+// else{
+//     console.log(`${name} is adult`);
+// }
+// //OR || 
 
-if(age<16 || age>65){
-    console.log(`${name} can not run in race`);
-}else{
-    console.log(`${name} is registered for the race`);
-}
+// if(age<16 || age>65){
+//     console.log(`${name} can not run in race`);
+// }else{
+//     console.log(`${name} is registered for the race`);
+// }
+
+//TERNNARY OPERATOR DONE
+console.log(id===100 ? 'CORREXT' : 'INCORRECT');
 
