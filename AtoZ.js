@@ -465,18 +465,32 @@ const id='100';
 //     console.log('NO');
 // }
 //IF ELSE
-const color='RED';
+// const color='RED';
 
-if(color==='RED')
+// if(color==='RED')
+// {
+//     console.log('Color is red');
+// }
+// else if(color==='BLUE'){
+//     console.log('Color is blue');
+// }
+// else{
+//     console.log('YELLOW')
+// }
+//LOGICAL OPERATOR
+
+const name='Steave';
+const age=20;
+
+//AND &&
+if(age>0 && age<12)
 {
-    console.log('Color is red');
-}
-else if(color==='BLUE'){
-    console.log('Color is blue');
+    console.log(`${name} is a child`);
+}else if(age>=13 && age<=19){
+    console.log(`${name} is a teneger`);
 }
 else{
-    console.log('YELLOW')
+    console.log(`${name} is adult`);
 }
-
 
 
