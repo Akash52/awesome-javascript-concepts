@@ -492,5 +492,11 @@ if(age>0 && age<12)
 else{
     console.log(`${name} is adult`);
 }
+//OR || 
 
+if(age<16 || age>65){
+    console.log(`${name} can not run in race`);
+}else{
+    console.log(`${name} is registered for the race`);
+}
 
