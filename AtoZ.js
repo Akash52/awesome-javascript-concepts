@@ -501,5 +501,12 @@ const age=20;
 // }
 
 //TERNNARY OPERATOR DONE
-console.log(id===100 ? 'CORREXT' : 'INCORRECT');
+console.log(id===100 ? 'CORRECT' : 'INCORRECT');
+//WITHOUT BRACE
+if(id==100)
+console.log('CORRECT');
+else
+console.log('INCORRECT');
+
+
 
