@@ -398,7 +398,7 @@ for(let i=0;i<people.length;i++){
     console.log(people[i]);
     console.log(people[i].name);
 }
-*/
+
 //Date and time
 let val;
 const today=new Date();
@@ -416,3 +416,38 @@ val=today.getTime();
 val=today.getSeconds();
 
 console.log(val);
+*/
+//Equal to
+const id='100';
+
+if(id==100){
+    console.log('CORRECT');
+}
+else{
+    console.log('INCORRECT')
+}
+//Not Equal to
+if(id!=100){
+    console.log('CORRECT');
+}
+else{
+    console.log('INCORRECT')
+}
+
+//EQUAL TO VALUE & TYPE
+
+if(id===100){
+    console.log('CORRECT');
+}
+else{   //===  Compare Type and Value
+    console.log('INCORRECT')
+}
+
+if(id!==100){
+    console.log('CORRECT');
+}
+else{   //===  Compare Type and Value
+    console.log('INCORRECT')
+}
+
+
