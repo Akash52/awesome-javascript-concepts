@@ -552,12 +552,33 @@ console.log('INCORRECT');
 
 // console.log(`Today is ${day}`);
 
-//FUNCTION declaration 
-function greeting(firtsName,lastname) {
-    //console.log('Hello');
-    return 'Hello'+firtsName + ' '+lastname;
-}
-greeting();
-console.log(greeting('Akash','Doe'));
+// //FUNCTION declaration 
+// function greeting(firtsName,lastname) {
+//     //console.log('Hello');
+//     return 'Hello'+firtsName + ' '+lastname;
+// }
+// greeting();
+// console.log(greeting('Akash','Doe')); //Passing variable
 
+//FUNCTION EXPRESSION
 
+// const sqaure=function(x){
+//     return x*x;
+// }
+// console.log(sqaure(8));
+// //PROPERTY METHODS
+//     const todo={
+//         add:function()
+//         {
+//             console.log('Add todo...');
+//         },
+//         edit:function(id){
+//             console.log(`Edit todo ${id}`);
+//         }
+//     }
+//     todo.delete=function(){
+//         console.log('Delete todo...');
+//     }
+//     todo.add();
+//     todo.edit(20);
+    // todo.delete();
