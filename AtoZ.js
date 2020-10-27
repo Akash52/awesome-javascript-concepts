@@ -509,45 +509,55 @@ else
 console.log('INCORRECT');
 */
 
-const color = "RED";
+// const color = "RED";
 
-switch (color) {
-  case "RED":
-    console.log("Color is red");
-    break;
-  case "BLUE":
-    console.log("COLOR IS BLUE");
-    break;
-  default:
-    console.log("Color not find");
+// switch (color) {
+//   case "RED":
+//     console.log("Color is red");
+//     break;
+//   case "BLUE":
+//     console.log("COLOR IS BLUE");
+//     break;
+//   default:
+//     console.log("Color not find");
+// }
+
+// let day;
+
+// switch (new Date().getDay()) {
+//   case 0:
+//     day = "Sunday";
+//     break;
+//   case 1:
+//     day = "Monday";
+//     break;
+//   case 2:
+//     day = "Tuesday";
+//     break;
+//   case 3:
+//     day = "Wendsday";
+//     break;
+//   case 4:
+//     day = "Thirsday";
+//     break;
+//   case 5:
+//     day = "Friday";
+//     break;
+//   case 6:
+//     day = "Saturday";
+//     break;
+
+
+// }
+
+// console.log(`Today is ${day}`);
+
+//FUNCTION declaration 
+function greeting(firtsName,lastname) {
+    //console.log('Hello');
+    return 'Hello'+firtsName + ' '+lastname;
 }
+greeting();
+console.log(greeting('Akash','Doe'));
 
-let day;
 
-switch (new Date().getDay()) {
-  case 0:
-    day = "Sunday";
-    break;
-  case 1:
-    day = "Monday";
-    break;
-  case 2:
-    day = "Tuesday";
-    break;
-  case 3:
-    day = "Wendsday";
-    break;
-  case 4:
-    day = "Thirsday";
-    break;
-  case 5:
-    day = "Friday";
-    break;
-  case 6:
-    day = "Saturday";
-    break;
-  
-   
-}
-
-console.log(`Today is ${day}`);
