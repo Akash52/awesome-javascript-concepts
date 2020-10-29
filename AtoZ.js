@@ -615,6 +615,12 @@ console.log('INCORRECT');
 
 const cars=['FORD','BMW','HONDA','TOYOTA'];
 
-for(let i=0;i<cars.length;i++){
-    console.log(cars[i]);
-}
+// for(let i=0;i<cars.length;i++){
+//     console.log(cars[i]);
+// }
+
+
+// //FOR EACH LOOOP
+// cars.forEach(function(car){
+//     console.log(car)
+// });
