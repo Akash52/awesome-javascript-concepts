@@ -600,3 +600,13 @@ console.log('INCORRECT');
 //     console.log('Hello World');
 //     i++;
 // }
+
+//DO WHILE
+
+// let i=0;
+
+// do{
+//     console.log('Number '+ i);
+//     i++;
+// }
+// while(i<10);
