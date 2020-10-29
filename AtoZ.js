@@ -583,8 +583,20 @@ console.log('INCORRECT');
 //     todo.edit(20);
     // todo.delete();
 
+
+    //Loops
+    //For 
 // for(let i=0;i<10;i++){
 
 //  console.log('Number'+ i);   
 
+// }
+
+
+//While
+// let i=0;
+// while(i<10)
+// {
+//     console.log('Hello World');
+//     i++;
 // }
