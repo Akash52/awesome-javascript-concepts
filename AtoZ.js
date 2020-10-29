@@ -624,6 +624,10 @@ const cars=['FORD','BMW','HONDA','TOYOTA'];
 // cars.forEach(function(car){
 //     console.log(car)
 // });
+cars.forEach(function(car,index,array){
+    console.log(`${index}:${car}`);
+    console.log(array);
+});
 
 //MAP
 
