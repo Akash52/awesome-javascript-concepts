@@ -610,3 +610,11 @@ console.log('INCORRECT');
 //     i++;
 // }
 // while(i<10);
+
+//Array with loops
+
+const cars=['FORD','BMW','HONDA','TOYOTA'];
+
+for(let i=0;i<cars.length;i++){
+    console.log(cars[i]);
+}
