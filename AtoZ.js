@@ -624,10 +624,10 @@ const cars=['FORD','BMW','HONDA','TOYOTA'];
 // cars.forEach(function(car){
 //     console.log(car)
 // });
-cars.forEach(function(car,index,array){
-    console.log(`${index}:${car}`);
-    console.log(array);
-});
+// cars.forEach(function(car,index,array){
+//     console.log(`${index}:${car}`);
+//     console.log(array);
+// });
 
 //MAP
 
@@ -643,3 +643,17 @@ cars.forEach(function(car,index,array){
 
 // });
 // console.log(ids);
+
+
+//FOR IN LOOP 
+const user={
+    first_name:'Akash',
+    lastname:'Chauhan',
+    age:40
+
+}
+
+for(let x in user)
+{
+    console.log(`${x}:${user[x]}`);
+}
