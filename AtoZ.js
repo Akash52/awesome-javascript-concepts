@@ -624,3 +624,18 @@ const cars=['FORD','BMW','HONDA','TOYOTA'];
 // cars.forEach(function(car){
 //     console.log(car)
 // });
+
+//MAP
+
+// const users=[
+//     {id:1,name:'Akash'},
+//     {id:2,name:'Akash'},
+//     {id:3,name:'Akash'}
+// ];
+
+// const ids=users.map(function(user){
+
+//     return user.id;
+
+// });
+// console.log(ids);
