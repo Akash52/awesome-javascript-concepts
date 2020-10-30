@@ -646,14 +646,20 @@ const cars=['FORD','BMW','HONDA','TOYOTA'];
 
 
 //FOR IN LOOP 
-const user={
-    first_name:'Akash',
-    lastname:'Chauhan',
-    age:40
+// const user={
+//     first_name:'Akash',
+//     lastname:'Chauhan',
+//     age:40
 
-}
+// }
 
-for(let x in user)
-{
-    console.log(`${x}:${user[x]}`);
-}
+// for(let x in user)
+// {
+//     console.log(`${x}:${user[x]}`);
+// }
+
+//WINDOW METHOD/ OBJECT / PROPERTIES
+
+//Alert
+window.alert("Hello World")
+
