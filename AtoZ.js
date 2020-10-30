@@ -675,4 +675,9 @@ const cars=['FORD','BMW','HONDA','TOYOTA'];
 //     console.log('NO');
 // }
 
+let val;
+//Outter height and width
 
+val=window.outerHeight;
+val=window.outerWidth;
+console.log(val);
