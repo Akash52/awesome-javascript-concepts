@@ -14,6 +14,9 @@
   * [Numbers  & Math object](#Numbers-Math-object)
   * [String and its operation](#string-and-its-operation)
   * [object and literals](#object-and-literals)
+  * [Date and time](#Date-and-time)
+  
+  
 
 <!-- tocstop -->
 ### console log
@@ -403,6 +406,23 @@ for(let i=0;i<people.length;i++){
     console.log(people[i]);
     console.log(people[i].name);
 }
+```
+### Date and time
+```javascript
+let val;
+const today=new Date();
+let birthday= new Date('9-18-1981');
+val=birthday;
+val=today.getDate();
+val=today.getMonth();
+val=today.getDay();
+val=today.getFullYear();
+val=today.getHours();
+val=today.getMinutes();
+val=today.getMilliseconds();
+val=today.getTime();
+val=today.getSeconds();
+console.log(val);
 ```
 
 
