@@ -680,4 +680,9 @@ let val;
 
 val=window.outerHeight;
 val=window.outerWidth;
+
+
+//Inner height and width
+val=window.innerHeight
+val=window.innerWidth;
 console.log(val);
