@@ -683,11 +683,38 @@ const cars=['FORD','BMW','HONDA','TOYOTA'];
 
 
 // //Inner height and width
+
 // val=window.innerHeight
 // val=window.innerWidth;
 // console.log(val);
 
-//Scroll points
-val=window.screenY;
-val=window.screenX;
+// val=window.location;
+
+// val=window.location.hostname;
+// val=window.location.port;
+// val=window.location.href;
+// val=window.location.search;
+
+// //Redirect
+
+// //window.location.href='http://google.com';
+
+// //Reload
+
+// window.location.reload();
+
+//Navigator Object
+val=window.navigator;
+val=window.navigator.appName;
+val=window.navigator.appVersion;
+val=window.navigator.userAgent;
+val=window.navigator.platform;
+
 console.log(val);
+
+
+
+//Scroll points
+// val=window.screenY;
+// val=window.screenX;
+
