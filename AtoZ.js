@@ -675,14 +675,19 @@ const cars=['FORD','BMW','HONDA','TOYOTA'];
 //     console.log('NO');
 // }
 
-let val;
-//Outter height and width
+ let val;
+// //Outter height and width
 
-val=window.outerHeight;
-val=window.outerWidth;
+// val=window.outerHeight;
+// val=window.outerWidth;
 
 
-//Inner height and width
-val=window.innerHeight
-val=window.innerWidth;
+// //Inner height and width
+// val=window.innerHeight
+// val=window.innerWidth;
+// console.log(val);
+
+//Scroll points
+val=window.screenY;
+val=window.screenX;
 console.log(val);
