@@ -13,6 +13,7 @@
   * [Type conversion](#Type-conversion)
   * [Numbers  & Math object](#Numbers-Math-object)
   * [String and its operation](#string-and-its-operation)
+  * [object and literals](#object-and-literals)
 
 <!-- tocstop -->
 ### console log
@@ -366,6 +367,43 @@ console.log(numbers);
 console.log(val);
 ```
 
+### object and literals
+```javascript
+const Person={
+    firstname:'Steav',
+    lastname:'Smith',
+    age:19,
+    email:'steave@gmail.com',
+    hobbies:['Music','sports'],
+    address:{
+        city:'Palitana',
+        state:'GU'
+    },
+    getBirthYear: function(){
+        return 2020-this.age;
+    }
+}
+let val;
+val=Person;
+Get specific value
+val=Person.firstname;
+val=Person.lastname;
+val=Person.age;
+val=Person.address;
+val=Person.address.state;
+val=Person.address['city'];
+val=Person.getBirthYear();
+console.log(val);
+const people=[
+    {name:'John',age:30},
+    {name:'Mike',age:30},
+    {name:'Sky',age:18}
+];
+for(let i=0;i<people.length;i++){
+    console.log(people[i]);
+    console.log(people[i].name);
+}
+```
 
 
 
