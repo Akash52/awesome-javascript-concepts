@@ -661,5 +661,9 @@ const cars=['FORD','BMW','HONDA','TOYOTA'];
 //WINDOW METHOD/ OBJECT / PROPERTIES
 
 //Alert
-window.alert("Hello World")
+//window.alert("Hello World")
+
+//Prompt
+const input=prompt();
+alert(input);
 
