@@ -709,6 +709,10 @@ val=window.navigator.appName;
 val=window.navigator.appVersion;
 val=window.navigator.userAgent;
 val=window.navigator.platform;
+val=window.navigator.vendor;
+val=window.navigator.language;
+val=window.navigator.languages;
+
 
 console.log(val);
 
