@@ -19,22 +19,20 @@ console.log('Hello world');
 console.log('Hello world');
 console.timeEnd('Hello'); //Function End
 
-
 multi
 line
 comments
 
 
-
-DataType,Naming,Rules
-var,let,const
+//DataType,Naming,Rules
+//var,let,const
 
 var name = "Akash Doe";
 console.log(name);
 name = "Steave smith"; //Re-assing variable
 console.log(name);
 
-Initialize variable
+//Initialize variable
 
 var greeting;
 console.log(greeting); //undefined error
@@ -46,28 +44,28 @@ Can not start with number
 var  name = 'John'; //Return error
 var name = 'John'; //these is valid
 
-Multi word vars
+//Multi word vars
 
 var firtsName = 'Akash'; //Camel case
 var first_name = 'Sara'; //Underscore
 var FirstName = 'Tome'; // Pascal case
 var firstname; //Not recomneded 
 
-LET
+//LET
 let name;
 let name = "Akash Doe";
 console.log(name);
 name = "Steave smith"; //Re-assing variable
 console.log(name);
 
-Const
+//Const
 
 const name = "Akash Doe";
 console.log(name);
 name = "Steave smith"; // can't Re-assing variable
 const greeting;
 
-Const
+//Const
 const Person = {
     name: 'Akash',
     age: '20'
@@ -82,15 +80,12 @@ numbers.push(6);
 
 console.log(numbers);
 
-*
-/
 
+//Data type
 
-Data type
+//PRIMITIVE
 
-PRIMITIVE
-
-String
+//String
 const name = 'John doe';
 Number
 const age = 45;
@@ -110,9 +105,9 @@ console.log(typeof car);
 console.log(typeof test);
 console.log(typeof sym);
 
-REFERENCE
+//REFERENCE
 
-Array
+//Array
 const hobbies = ['movie', 'music'];
 Object literal
 const address = {
@@ -127,23 +122,23 @@ console.log(address);
 const today = new Date();
 console.log(today);
 
-Type conversion
+//Type conversion
 
 let val;
-Number to string
+//Number to string
 val = String(555);
 val = String(4 + 4);
-Bool to string
+//Bool to string
 val = String(true);
-Date to string
+//Date to string
 val = String(new Date());
-Array to string
+//Array to string
 val = String([1, 2, 3, 4]);
 toString()
 val = (5).toString();
 val = (true).toString();
 
-Stirng to Number
+//Stirng to Number
 val = Number('5');
 val = Number(true);
 val = Number(false);
@@ -156,7 +151,7 @@ val = parseInt('100'); //Only return integer
 val = parseFloat('100.4646'); //Return Float value
 
 
-String concersion
+//String concersion
 const val1 = String(5);
 const val2 = 6;
 const sum = val1 + val2;
@@ -170,13 +165,13 @@ console.log(typeof val);
 console.log(val.length);
 console.log(val.toFixed());
 
-Numbers  & Math object
+//Numbers  & Math object
 
 const num1 = 100;
 const num2 = 50;
 let val;
 
-Simple math with numbers
+//Simple math with numbers
 
 val = num1 + num2;
 val = num1 * num2;
@@ -184,7 +179,7 @@ val = num1 - num2;
 val = num1 / num2;
 val = num1 % num2;
 
-Math object
+//Math object
 
 val = Math.PI;
 val = Math.round(2.8);
@@ -204,17 +199,17 @@ console.log(val);
 
 
 
-string and its operation
+//string and its operation
 
 const firstname = 'Akash';
 const lastname = 'Chauhan';
 let val;
 val = firstname + lastname;
 
-Concatenation
+//Concatenation
 val = firstname + '' + lastname;
 
-Append
+//Append
 val = 'Brad ';
 val += ' Traversy';
 const age=50;
@@ -223,34 +218,34 @@ const str='Hello there my name is Akash';
 val = 'Hello,my name is' + firstname + 'and I am ' + age;
 const tags='web design,web development,full stack,mean stack,mern stack';
 
-Escaping
+//Escaping
 val = 'That\'s awesome, I can\'t wait';
 
-Length
+//Length
 val=firstname.length;
 
-concat
+//concat
 val=firstname.concat(' ',lastname);
 
-Change case
+//Change case
 val=firstname.toUpperCase();
 val=lastname.toLowerCase();
 
-Sub string
+//Sub string
 val=firstname.substring(0,4);
 
-slice
+//slice
 val=firstname.slice(0,4); //you can use neagtive number
 val=firstname.slice(-3);
 
-Split
+//Split
 val=str.split(' ');
 val=tags.split(',')
 
-Replace
+//Replace
 val=str.replace('Akash','jack');
 
-Include
+//Include
 val=str.includes('Hello'); //If availble then return true
 val=str.includes('foo');  //if not false
 
@@ -259,7 +254,7 @@ console.log(val);
 
 const { SSL_OP_NO_SESSION_RESUMPTION_ON_RENEGOTIATION } = require("constants");
 
-Template string
+//Template string
 
 const name='Jhon';
 const age='30';
@@ -267,12 +262,12 @@ const job='Web Developer';
 const city='Rajkot';
 let html;
 
-Without template string (es5)
+//Without template string (es5)
 
 html='<ul><li>Name :'+ name +'</li><li>Age:'+ age + '</li><li>Job:'+job+'</li><li>City:'+city+'</li></ul>';
 document.body.innerHTML=html;
 
-With template string (es6)
+//With template string (es6)
 
 function hello(){
     return 'hello how are you';
@@ -292,7 +287,7 @@ html=`
 document.body.innerHTML=html;
 
 
-Create some arrays
+//Create some arrays
 
 const numbers=[42,34,45,33,32,34,43];
 const num2= new Array(22,34,433,3,43,43);
@@ -301,46 +296,46 @@ const mixed=[24,24,54,'Akash',44,'Chauhan',true,undefined,null];
 
 
 
-Get array length
+//Get array length
 
 val=numbers.length;
 
-Check if is array
+//Check if is array
 val = Array.isArray(numbers);
 
-GEt single value 
+//GEt single value 
 val=numbers[3];
 val =numbers[0];
-Insert into array 
+//Insert into array 
 numbers[2]=100;
-Find index of value
+//Find index of value
 val=numbers.indexOf(43);
 
-MUTING ARRAYS
+//MUTING ARRAYS
 
-Add on to end 
+//Add on to end 
 numbers.push(250);
-Add on to front
+//Add on to front
 numbers.unshift(120);
-Take of from end
+//Take of from end
 numbers.pop();
-Take from front
+//Take from front
 numbers.shift();
-Splice values 
+//Splice values 
 numbers.splice(1,3);
-reverse 
+//reverse 
 numbers.reverse();
-Concatenate array
+//Concatenate array
 val=numbers.concat(num2);
-Sorting array
+//Sorting array
 val=numbers.sort();
 val=fruit.sort();
-Use the "compare funtion"
+//Use the "compare funtion"
 val=numbers.sort(function(x,y){
     return x-y;
 });
 
-Find 
+//Find 
 function under50(num){
     return num<50;
 }
@@ -353,7 +348,7 @@ console.log(val);
 
 
 
-object literals
+//object literals
 
 const Person={
     firstname:'Steav',
@@ -399,7 +394,7 @@ for(let i=0;i<people.length;i++){
     console.log(people[i].name);
 }
 
-Date and time
+//Date and time
 let val;
 const today=new Date();
 let birthday= new Date('9-18-1981');
@@ -417,7 +412,7 @@ val=today.getSeconds();
 
 console.log(val);
 
-Equal to
+//Equal to
 const id=100;
 
 if(id==100){
@@ -426,7 +421,7 @@ if(id==100){
 else{
     console.log('INCORRECT')
 }
-//Not Equal to
+Not Equal to
 if(id!=100){
     console.log('CORRECT');
 }
@@ -456,7 +451,7 @@ if(typeof id!=='undefined'){
 else{
     console.log(`NO ID`);
 }
-GREATER OR LESS THAN
+//GREATER OR LESS THAN
 if(id>100)
 {
     console.log('YES')
@@ -464,7 +459,7 @@ if(id>100)
 else{
     console.log('NO');
 }
-IF ELSE
+//IF ELSE
 const color='RED';
 
 if(color==='RED')
@@ -477,7 +472,7 @@ else if(color==='BLUE'){
 else{
     console.log('YELLOW')
 }
-LOGICAL OPERATOR
+//LOGICAL OPERATOR
 
 const name='Steave';
 const age=20;
@@ -492,7 +487,7 @@ if(age>0 && age<12)
 else{
     console.log(`${name} is adult`);
 }
-//OR || 
+//OR 
 
 if(age<16 || age>65){
     console.log(`${name} can not run in race`);
@@ -500,210 +495,210 @@ if(age<16 || age>65){
     console.log(`${name} is registered for the race`);
 }
 
-TERNNARY OPERATOR DONE
+//TERNNARY OPERATOR DONE
 console.log(id===100 ? 'CORRECT' : 'INCORRECT');
-WITHOUT BRACE
+//WITHOUT BRACE
 if(id==100)
 console.log('CORRECT');
 else
 console.log('INCORRECT');
-*/
-
-// const color = "RED";
-
-// switch (color) {
-//   case "RED":
-//     console.log("Color is red");
-//     break;
-//   case "BLUE":
-//     console.log("COLOR IS BLUE");
-//     break;
-//   default:
-//     console.log("Color not find");
-// }
-
-// let day;
-
-// switch (new Date().getDay()) {
-//   case 0:
-//     day = "Sunday";
-//     break;
-//   case 1:
-//     day = "Monday";
-//     break;
-//   case 2:
-//     day = "Tuesday";
-//     break;
-//   case 3:
-//     day = "Wendsday";
-//     break;
-//   case 4:
-//     day = "Thirsday";
-//     break;
-//   case 5:
-//     day = "Friday";
-//     break;
-//   case 6:
-//     day = "Saturday";
-//     break;
 
 
-// }
+const color = "RED";
 
-// console.log(`Today is ${day}`);
+switch (color) {
+  case "RED":
+    console.log("Color is red");
+    break;
+  case "BLUE":
+    console.log("COLOR IS BLUE");
+    break;
+  default:
+    console.log("Color not find");
+}
 
-// //FUNCTION declaration 
-// function greeting(firtsName,lastname) {
-//     //console.log('Hello');
-//     return 'Hello'+firtsName + ' '+lastname;
-// }
-// greeting();
-// console.log(greeting('Akash','Doe')); //Passing variable
+let day;
 
-//FUNCTION EXPRESSION
-
-// const sqaure=function(x){
-//     return x*x;
-// }
-// console.log(sqaure(8));
-// //PROPERTY METHODS
-//     const todo={
-//         add:function()
-//         {
-//             console.log('Add todo...');
-//         },
-//         edit:function(id){
-//             console.log(`Edit todo ${id}`);
-//         }
-//     }
-//     todo.delete=function(){
-//         console.log('Delete todo...');
-//     }
-//     todo.add();
-//     todo.edit(20);
-    // todo.delete();
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wendsday";
+    break;
+  case 4:
+    day = "Thirsday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case 6:
+    day = "Saturday";
+    break;
 
 
-    //Loops
-    //For 
-// for(let i=0;i<10;i++){
+}
 
-//  console.log('Number'+ i);   
+console.log(`Today is ${day}`);
 
-// }
+//FUNCTION declaration 
+function greeting(firtsName,lastname) {
+    //console.log('Hello');
+    return 'Hello'+firtsName + ' '+lastname;
+}
+greeting();
+console.log(greeting('Akash','Doe')); //Passing variable
+
+FUNCTION EXPRESSION
+
+const sqaure=function(x){
+    return x*x;
+}
+console.log(sqaure(8));
+//PROPERTY METHODS
+    const todo={
+        add:function()
+        {
+            console.log('Add todo...');
+        },
+        edit:function(id){
+            console.log(`Edit todo ${id}`);
+        }
+    }
+    todo.delete=function(){
+        console.log('Delete todo...');
+    }
+    todo.add();
+    todo.edit(20);
+    todo.delete();
+
+
+  //  Loops
+  //  For 
+for(let i=0;i<10;i++){
+
+ console.log('Number'+ i);   
+
+}
 
 
 //While
-// let i=0;
-// while(i<10)
-// {
-//     console.log('Hello World');
-//     i++;
-// }
+let i=0;
+while(i<10)
+{
+    console.log('Hello World');
+    i++;
+}
 
 //DO WHILE
 
-// let i=0;
+let i=0;
 
-// do{
-//     console.log('Number '+ i);
-//     i++;
-// }
-// while(i<10);
+do{
+    console.log('Number '+ i);
+    i++;
+}
+while(i<10);
 
 //Array with loops
 
 const cars=['FORD','BMW','HONDA','TOYOTA'];
 
-// for(let i=0;i<cars.length;i++){
-//     console.log(cars[i]);
-// }
+for(let i=0;i<cars.length;i++){
+    console.log(cars[i]);
+}
 
 
-// //FOR EACH LOOOP
-// cars.forEach(function(car){
-//     console.log(car)
-// });
-// cars.forEach(function(car,index,array){
-//     console.log(`${index}:${car}`);
-//     console.log(array);
-// });
+//FOR EACH LOOOP
+cars.forEach(function(car){
+    console.log(car)
+});
+cars.forEach(function(car,index,array){
+    console.log(`${index}:${car}`);
+    console.log(array);
+});
 
 //MAP
 
-// const users=[
-//     {id:1,name:'Akash'},
-//     {id:2,name:'Akash'},
-//     {id:3,name:'Akash'}
-// ];
+const users=[
+    {id:1,name:'Akash'},
+    {id:2,name:'Akash'},
+    {id:3,name:'Akash'}
+];
 
-// const ids=users.map(function(user){
+const ids=users.map(function(user){
 
-//     return user.id;
+    return user.id;
 
-// });
-// console.log(ids);
+});
+console.log(ids);
 
 
 //FOR IN LOOP 
-// const user={
-//     first_name:'Akash',
-//     lastname:'Chauhan',
-//     age:40
+const user={
+    first_name:'Akash',
+    lastname:'Chauhan',
+    age:40
 
-// }
+}
 
-// for(let x in user)
-// {
-//     console.log(`${x}:${user[x]}`);
-// }
+for(let x in user)
+{
+    console.log(`${x}:${user[x]}`);
+}
 
 //WINDOW METHOD/ OBJECT / PROPERTIES
 
 //Alert
-//window.alert("Hello World")
+window.alert("Hello World")
 
 //Prompt
-// const input=prompt();
-// alert(input);
+const input=prompt();
+alert(input);
 
-//Confirm
-// if(confirm('Are you sure')){
-//     console.log('YES');
-// }
-// else{
-//     console.log('NO');
-// }
+Confirm
+if(confirm('Are you sure')){
+    console.log('YES');
+}
+else{
+    console.log('NO');
+}
 
  let val;
-// //Outter height and width
+//Outter height and width
 
-// val=window.outerHeight;
-// val=window.outerWidth;
+val=window.outerHeight;
+val=window.outerWidth;
 
 
-// //Inner height and width
+//Inner height and width
 
-// val=window.innerHeight
-// val=window.innerWidth;
-// console.log(val);
+val=window.innerHeight
+val=window.innerWidth;
+console.log(val);
 
-// val=window.location;
+val=window.location;
 
-// val=window.location.hostname;
-// val=window.location.port;
-// val=window.location.href;
-// val=window.location.search;
+val=window.location.hostname;
+val=window.location.port;
+val=window.location.href;
+val=window.location.search;
 
-// //Redirect
+//Redirect
 
-// //window.location.href='http://google.com';
+//window.location.href='http://google.com';
 
-// //Reload
+//Reload
 
-// window.location.reload();
+window.location.reload();
 
-//Navigator Object
+Navigator Object
 val=window.navigator;
 val=window.navigator.appName;
 val=window.navigator.appVersion;
@@ -718,7 +713,8 @@ console.log(val);
 
 
 
-//Scroll points
-// val=window.screenY;
-// val=window.screenX;
+Scroll points
+val=window.screenY;
+val=window.screenX;
+*/
 
