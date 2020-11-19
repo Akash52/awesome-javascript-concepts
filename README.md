@@ -425,6 +425,84 @@ val=today.getSeconds();
 console.log(val);
 ```
 
+###
+```javascript
+//Equal to
+const id=100;
+if(id==100){
+    console.log('CORRECT');
+}
+else{
+    console.log('INCORRECT')
+}
+Not Equal to
+if(id!=100){
+    console.log('CORRECT');
+}
+else{
+    console.log('INCORRECT')
+}
+//EQUAL TO VALUE & TYPE
+if(id===100){
+    console.log('CORRECT');
+}
+else{   //===  Compare Type and Value
+    console.log('INCORRECT')
+}
+if(id!==100){
+    console.log('CORRECT');
+}
+else{   //===  Compare Type and Value
+    console.log('INCORRECT')
+}
+TEST IF UNDEFINED
+if(typeof id!=='undefined'){
+    console.log(`The ID is ${id}`);
+}
+else{
+    console.log(`NO ID`);
+}
+//GREATER OR LESS THAN
+if(id>100)
+{
+    console.log('YES')
+}
+else{
+    console.log('NO');
+}
+//IF ELSE
+const color='RED';
+if(color==='RED')
+{
+    console.log('Color is red');
+}
+else if(color==='BLUE'){
+    console.log('Color is blue');
+}
+else{
+    console.log('YELLOW')
+}
+//LOGICAL OPERATOR
+const name='Steave';
+const age=20;
+//AND &&
+if(age>0 && age<12)
+{
+    console.log(`${name} is a child`);
+}else if(age>=13 && age<=19){
+    console.log(`${name} is a teneger`);
+}
+else{
+    console.log(`${name} is adult`);
+}
+//OR 
+if(age<16 || age>65){
+    console.log(`${name} can not run in race`);
+}else{
+    console.log(`${name} is registered for the race`);
+}
+```
+
 
 
 
