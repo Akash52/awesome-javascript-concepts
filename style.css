@@ -1,16 +1,32 @@
-body {
-    margin: auto;
-    padding: 0;
-    background-color: rgb(182, 199, 163));
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
 }
 
-.fl {
-    height: 200px;
+body{
+    background-color: #efedd6;
+    font-family: 'Roboto',sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background-color: aqua;
-    font-size: 30px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: center;
+    margin: 0%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.fl{
+    background-color:rgb(101, 180, 70);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0,0,0.1),0 6px 6px rgba(0, 0,0,0.1);
+    transition: transform 0.4s ease;
 }
