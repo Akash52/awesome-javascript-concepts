@@ -29,4 +29,18 @@ let doubled = numbbers.map(function (number) {
   return number * 2
 })
 
-doubled
+console.log(doubled)
+
+//Example
+
+const objects = [
+  { a: 1, b: 2 },
+  { a: 3, b: 4 },
+  { a: 5, b: 6 },
+]
+
+let onlybs = objects.map((object) => {
+  return object.b
+})
+
+console.log(onlybs)
