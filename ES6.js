@@ -28,8 +28,18 @@ let numbbers = [1, 2, 3, 4]
 let doubled = numbbers.map(function (number) {
   return number * 2
 })
+console.log(doubled) //Output : 2,4,6,8
 
-console.log(doubled)
+const sweetArray = [2, 3, 4, 5, 35]
+const sweeterArray = sweetArray.map((sweetItem) => {
+  return sweetItem * 2
+})
+
+console.log(sweeterArray)
+
+//This output is logged to the console:
+
+Output[(4, 6, 8, 10, 70)]
 
 //Example
 
