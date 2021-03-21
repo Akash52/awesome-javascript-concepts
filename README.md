@@ -15,7 +15,10 @@
   * [String and its operation](#string-and-its-operation)
   * [object and literals](#object-and-literals)
   * [Date and time](#Date-and-time)
-  
+  * [Coditional-Statement](#Coditional-Statement)
+
+
+
   
 
 <!-- tocstop -->
@@ -425,7 +428,7 @@ val=today.getSeconds();
 console.log(val);
 ```
 
-###
+### Coditional Statement 
 ```javascript
 //Equal to
 const id=100;
