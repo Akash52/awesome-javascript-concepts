@@ -716,5 +716,43 @@ console.log(val);
 Scroll points
 val=window.screenY;
 val=window.screenX;
-*/
 
+
+const sky = {
+  name: 'ABC',
+  age: '30',
+}
+
+console.log(sky)
+console.log(sky.age)
+
+
+// Person Constructor
+
+function Person(name, age) {
+  this.name = name
+  this.age = age
+}
+
+const sky = new Person('sky', 18)
+const Jhon = new Person('jhon', 19)
+
+console.log(sky)
+
+
+function Person(name, dob) {
+  this.name = name
+  //this.age = age
+
+  this.birthday = new Date(dob)
+
+  this.caculateAge = function () {
+    const diff = Date.now() - this.birthday.getTime()
+    const ageDate = new Date(diff)
+    return Math.abs(ageDate.getUTCFullYear() - 1970)
+  }
+}
+
+const sky = new Person('Sky', '9-10-1981')
+console.log(sky.caculateAge())
+*/

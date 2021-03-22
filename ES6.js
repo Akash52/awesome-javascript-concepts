@@ -1,3 +1,4 @@
+/*
 //Array helper Method
 
 // forEach, map, filter, find, every, some & Reduce
@@ -54,3 +55,4 @@ let onlybs = objects.map((object) => {
 })
 
 console.log(onlybs)
+*/
