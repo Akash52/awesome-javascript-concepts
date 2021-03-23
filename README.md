@@ -16,7 +16,7 @@
   * [object and literals](#object-and-literals)
   * [Date and time](#Date-and-time)
   * [Coditional-Statement](#Coditional-Statement)
-  * [FUNCTION declaration](#FUNCTION-declaration)
+  * [Function declaration](#FUNCTION-declaration)
 
 
 
