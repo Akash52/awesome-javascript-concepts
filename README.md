@@ -508,7 +508,7 @@ if(age<16 || age>65){
 ```
 
 ### FUNCTION declaration 
-```
+```javascript
 function greeting(firtsName,lastname) {
     //console.log('Hello');
     return 'Hello'+firtsName + ' '+lastname;
