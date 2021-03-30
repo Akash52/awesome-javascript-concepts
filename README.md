@@ -13,7 +13,7 @@
   * [Type conversion](#Type-conversion)
   * [Numbers  & Math object](#Numbers-Math-object)
   * [String and its operation](#string-and-its-operation)
-  * [object and literals](#object-and-literals)
+  * [Object and Literals](#object-and-literals)
   * [Date and time](#Date-and-time)
   * [Coditional-Statement](#Coditional-Statement)
   * [Function declaration](#FUNCTION-declaration)
