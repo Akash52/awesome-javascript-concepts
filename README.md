@@ -16,7 +16,7 @@
   * [Object and Literals](#object-and-literals)
   * [Date and time](#Date-and-time)
   * [Coditional-Statement](#Coditional-Statement)
-  * [Function declaration](#FUNCTION-declaration)
+  * [Function declaration](#Function-declaration)
   * [Ajax & XHR Methods](#Ajax-and-XHR-Methods)
 
 
@@ -508,7 +508,7 @@ if(age<16 || age>65){
 }
 ```
 
-### FUNCTION declaration 
+### Function declaration 
 ```javascript
 function greeting(firtsName,lastname) {
     //console.log('Hello');
