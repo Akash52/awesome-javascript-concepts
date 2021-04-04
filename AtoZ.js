@@ -756,3 +756,22 @@ function Person(name, dob) {
 const sky = new Person('Sky', '9-10-1981')
 console.log(sky.caculateAge())
 */
+
+//Ajax & XHR Methods
+
+document.getElementById('button').addEventListener('click', loadData)
+
+function loadData() {
+  // Create an  XHR Object
+  const xhr = new XMLHttpRequest()
+  //OPEN
+  xhr.open('GET', 'data.txt', true)
+
+  xhr.onload = function () {
+    if (this.status == 200) {
+      console.log(this.responseText)
+    }
+  }
+
+  xhr.send()
+}
