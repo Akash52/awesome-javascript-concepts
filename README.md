@@ -18,6 +18,7 @@
   * [Coditional-Statement](#Coditional-Statement)
   * [Function declaration](#Function-declaration)
   * [Ajax & XHR Methods](#Ajax-and-XHR-Methods)
+  * [Working with AJAX and JSON](#Working-with-AJAX-and-JSON)
 
 
 
@@ -560,4 +561,61 @@ function loadData() {
 
 ```
 
+### Working with AJAX and JSON
+```javascript
+document.getElementById('button1').addEventListener('click', loadCustomber)
+document.getElementById('button2').addEventListener('click', loadCustombers)
+
+//Laod Single Customber
+function loadCustomber(e) {
+  const xhr = new XMLHttpRequest()
+
+  xhr.open('GET', '/data/customber.json', true)
+  xhr.onload = function () {
+    if (this.status == 200) {
+      // console.log(this.responseText)
+
+      const customber = JSON.parse(this.responseText)
+
+      const output = `
+      <ul>
+      <li>ID: ${customber.id}</li>
+      <li>Name: ${customber.name}</li>
+      <li>Company: ${customber.company}</li>
+      <li>Phone: ${customber.phone}</li>
+      </ul>`
+
+      document.getElementById('customer').innerHTML = output
+    }
+  }
+  xhr.send()
+}
+//Load Cutomers
+function loadCustombers(e) {
+  const xhr = new XMLHttpRequest()
+
+  xhr.open('GET', '/data/customers.json', true)
+  xhr.onload = function () {
+    if (this.status == 200) {
+      // console.log(this.responseText)
+
+      const customers = JSON.parse(this.responseText)
+      let output = ''
+
+      customers.forEach(function (customer) {
+        output += `
+        <ul>
+        <li>ID: ${customer.id}</li>
+        <li>Name: ${customer.name}</li>
+        <li>Company: ${customer.company}</li>
+        <li>Phone: ${customer.phone}</li>
+  
+        </ul>`
+      })
+
+      document.getElementById('customers').innerHTML = output
+    }
+  }
+  xhr.send()
+```
 
