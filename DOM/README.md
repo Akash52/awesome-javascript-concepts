@@ -1,4 +1,4 @@
-```
+```javascript
 //DOM (Document object Model)
 
 //Single Element Selector
