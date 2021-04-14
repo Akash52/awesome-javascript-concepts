@@ -112,3 +112,28 @@ let html = `
 <span>This is blog has ${likes} likes</span>`
 
 console.log(html)
+
+//5. Arrays
+
+let ninjas = ['abc', 'def', 'jhi', 'jkl']
+
+ninjas[0] = 'ken'
+console.log(ninjas[0])
+
+let ages = [23, 34, 2, 3, 34]
+console.log(ages[1])
+
+let random = ['show', 'look', '23', '3']
+console.log(random)
+
+console.log(random.length)
+
+// Array methods
+
+//let result_ = ninjas.join('-') //join together
+//let result_ = ninjas.indexOf('def')
+//let result_ = ninjas.concat('kne', 'crystal')
+//let result_ = ninjas.push('kne')
+
+result_ = ninjas.pop()
+console.log(ninjas)
