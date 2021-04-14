@@ -88,3 +88,27 @@ let likes = 10
 
 //NaN - not a number
 //console.log(5 / 'hello')
+
+//4. Template strings
+
+const title = 'Beast reads of 2019'
+const author = 'Mario'
+const likess = 30
+
+// concatenation way
+
+//let resulte ='The blog callled ' + title + 'by' + author + 'has' + likess + 'likess'
+
+// template string way
+
+//let _result = `The blog called ${title} by ${author} has ${likes} likes`
+//console.log(_result)
+
+// creating html template
+
+let html = `
+<h2>${title}</h2>
+<p>By ${author}</p>
+<span>This is blog has ${likes} likes</span>`
+
+console.log(html)
