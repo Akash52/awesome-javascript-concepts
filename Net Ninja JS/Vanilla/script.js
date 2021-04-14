@@ -57,4 +57,34 @@ let emaill = 'mario@gmail.com'
 
 //let result = emaill.replace('a', 'w')
 
-console.log(result)
+//console.log(result)
+
+//3. Numbers
+
+let radius = 10
+const pi = 3.14
+
+//console.log(radius, pi)
+
+//math operators +,-,*,/,**,%
+
+//let result = radius % 3
+//let result = pi * radius ** 2
+
+//Order of Opeartion - B I D M AS
+
+//let result = 5*(10-3)**2;
+
+let likes = 10
+
+//likes = likes + 1
+//likes++
+//likes --
+
+//likes +=10;
+//likes -=5;
+//likes *=2;
+//likes /=2;
+
+//NaN - not a number
+//console.log(5 / 'hello')
