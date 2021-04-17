@@ -228,3 +228,33 @@ function Counter() {
 }
 
 var counter = new Counter()
+
+// Error handling with try Catch
+
+const user = { email: 'abc@gmail.com' }
+
+try {
+  // Produce a Reference error
+  // myFutction()
+  // Produce a type Error
+  //null.myFunction()
+  //Will produce syntaxError
+  // eval('Hello World !')
+  //Will produce a URIError
+  //decodeURIComponent('%')
+  if (!user.name) {
+    //throw 'User has no name'
+    throw new SyntaxError('User has no name')
+  }
+} catch (error) {
+  console.log(error)
+  //console.log(`${error.name} ITS NULL STUPID`)
+  // console.log(error.message)
+  // console.log(error.name)
+  // console.log(error instanceof ReferenceError)
+  // console.log(error instanceof TypeError)
+} finally {
+  console.log('Finally runs regardless of result ')
+}
+
+console.log('Program continue ')
