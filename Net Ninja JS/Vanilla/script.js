@@ -137,3 +137,10 @@ console.log(random.length)
 
 result_ = ninjas.pop()
 console.log(ninjas)
+
+//6. Null & Undefined
+
+//let agee
+let agee = null
+
+console.log(agee, agee + 3, `the age is ${agee}`)
