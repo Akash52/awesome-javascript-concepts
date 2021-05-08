@@ -357,3 +357,21 @@ switch (gradee) {
   default:
     console.log('not a valid grade')
 }
+
+// 13. Variables & block scope
+
+let aagge = 30 // Global scope you can access anyware
+
+//let aagge=40 -> we can't define in same scope
+
+if (true) {
+  let aagge = 40 // here we can assign bcz inside scope
+  let naame = 'jhon' // local scope
+  console.log('inside 1st code block', aagge, naame) //inside code block
+
+  if (true) {
+    console.log('inside 2nd code block: ', aagge) //its log nearest scope value
+  }
+}
+
+console.log('outside code block', aagge, naame) // we can't naame bza it has local scope
