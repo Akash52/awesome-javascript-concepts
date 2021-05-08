@@ -211,3 +211,50 @@ console.log(typeof sc)
 console.log(rs, typeof rs)
 console.log(rc, typeof rc)
 console.log(ra, typeof ra)
+
+// 9. Loops
+
+// for loops
+
+//simple table
+let numm = 5
+for (let i = 1; i <= 10; i++) {
+  console.log(numm, '*', i, '=', i * numm)
+}
+
+const abc = ['abc', 'efg', 'hij', 'klm']
+
+for (let j = 0; j < abc.length; j++) {
+  console.log(abc[j])
+}
+
+//while loops
+
+const animals = ['cow', 'dog', 'cat', 'klm']
+
+let b = 0
+while (b < animals.length) {
+  console.log(animals[b])
+  b++
+}
+
+//without multplication operator Multiply two numbers
+
+let x,
+  tmp = 0
+x = 4
+y = 5
+
+while (y != 0) {
+  tmp = tmp + x
+  y--
+}
+console.log(tmp)
+
+// Do while loops
+
+let c = 3
+do {
+  console.log('val of c is :', c)
+  c++
+} while (c < 5)
