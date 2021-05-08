@@ -222,6 +222,8 @@ for (let i = 1; i <= 10; i++) {
   console.log(numm, '*', i, '=', i * numm)
 }
 
+// loop through string
+
 const abc = ['abc', 'efg', 'hij', 'klm']
 
 for (let j = 0; j < abc.length; j++) {
@@ -258,3 +260,49 @@ do {
   console.log('val of c is :', c)
   c++
 } while (c < 5)
+
+// 10.Coditional Statements
+
+// if statements
+
+// const eege = 20
+
+// if (eege > 20) {
+//   console.log('your over 20 years old ')
+// } else {
+//   console.log('your not over 20 year old ')
+// }
+
+// const ninjass = ['shaun', 'ryn', 'chun-li', 'yoshi']
+
+// if (ninjass.length > 4) {
+//   console.log("that's a lot of ninjas")
+// } else {
+//   console.log("that's a not lot of ninjas")
+// }
+
+// else if
+// const password = 'pass'
+
+// if (password.length >= 12) {
+//   console.log('that password is might strong')
+// } else if (password.length >= 8) {
+//   console.log('that password is long eough')
+// } else {
+//   console.log('that password is not long eough')
+// }
+
+// Logical Operators - OR || and AND &&
+
+const password = 'pass5@'
+
+if (password.length >= 12 && password.includes('@')) {
+  console.log('that password is might strong')
+} else if (
+  password.length >= 8 ||
+  (password.includes('@') && password.length > 5)
+) {
+  console.log('that password is strong eough')
+} else {
+  console.log('that password is not long eough')
+}
