@@ -178,6 +178,9 @@ let namee = 'jhone'
 // console.log(namee < 'Akashbbb')
 
 //Loose comparison (different types can still be equal)
+
+//this is implicit conversion
+//automatic conversion type
 let num1 = 25
 // console.log(num1 == 25)
 // console.log(num1 == '25')
@@ -186,7 +189,25 @@ let num1 = 25
 
 //strict comparison (different types cannot be equal)
 
-console.log(num1 === 25)
-console.log(num1 === '25')
-console.log(num1 !== 25)
-console.log(num1 !== '25')
+// console.log(num1 === 25)
+// console.log(num1 === '25')
+// console.log(num1 !== 25)
+// console.log(num1 !== '25')
+
+//8. type conversion
+
+//this is explicit convesion
+//we manually convert type
+
+let sc = '100'
+sc = Number(sc)
+let rs = String(50)
+let rc = Boolean(100)
+//let rc = Boolean(0) // 0 is false
+let ra = Boolean('0')
+
+console.log(sc + 1)
+console.log(typeof sc)
+console.log(rs, typeof rs)
+console.log(rc, typeof rc)
+console.log(ra, typeof ra)
