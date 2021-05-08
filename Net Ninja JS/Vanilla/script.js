@@ -318,3 +318,18 @@ if (!user) {
 
 console.log(!true)
 console.log(!false)
+
+//11. Break and continue
+
+const scr = [50, 25, 45, 100, 0, 20, 10]
+
+for (let g = 0; g < scr.length; g++) {
+  if (scr[g] === 0) {
+    continue
+  }
+  console.log('youe score : ', scr[g])
+  if (scr[g] === 100) {
+    console.log('congrats,you got the top score !')
+    break
+  }
+}
