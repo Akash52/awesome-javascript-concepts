@@ -333,3 +333,27 @@ for (let g = 0; g < scr.length; g++) {
     break
   }
 }
+
+//12. Switch Statements
+
+// Switch statement use strict equality
+
+const gradee = 'A'
+
+switch (gradee) {
+  case 'A':
+    console.log('you got an A !')
+    break
+  case 'B':
+    console.log('you got an B !')
+    break
+  case 'C':
+    console.log('you got an C !')
+    break
+  case 'D':
+    console.log('you got an D !')
+    break
+
+  default:
+    console.log('not a valid grade')
+}
