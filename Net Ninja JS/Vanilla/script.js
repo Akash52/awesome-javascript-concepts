@@ -162,10 +162,31 @@ console.log(result)
 // Comparison Operators
 
 let ege = 25
-console.log(ege == 25) // True
-console.log(ege == 30) // False
-console.log(ege != 35) // True
-console.log(ege > 20) //True
-console.log(ege < 20) // False
-console.log(ege <= 25) // True
-console.log(ege >= 25) //True
+// console.log(ege == 25) // True
+// console.log(ege == 30) // False
+// console.log(ege != 35) // True
+// console.log(ege > 20) //True
+// console.log(ege < 20) // False
+// console.log(ege <= 25) // True
+// console.log(ege >= 25) //True
+
+let namee = 'jhone'
+
+// console.log(namee == 'jhone')
+// console.log(namee == 'jhone')
+// console.log(namee < 'skykkk')
+// console.log(namee < 'Akashbbb')
+
+//Loose comparison (different types can still be equal)
+let num1 = 25
+// console.log(num1 == 25)
+// console.log(num1 == '25')
+// console.log(num1 != 25)
+// console.log(num1 != '25')
+
+//strict comparison (different types cannot be equal)
+
+console.log(num1 === 25)
+console.log(num1 === '25')
+console.log(num1 !== 25)
+console.log(num1 !== '25')
