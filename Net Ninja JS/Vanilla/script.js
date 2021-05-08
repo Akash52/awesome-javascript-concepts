@@ -306,3 +306,15 @@ if (password.length >= 12 && password.includes('@')) {
 } else {
   console.log('that password is not long eough')
 }
+
+// Logical NOT (!)
+
+let user = false
+
+if (!user) {
+  // switch to true
+  console.log('HI') // when true it's log
+}
+
+console.log(!true)
+console.log(!false)
