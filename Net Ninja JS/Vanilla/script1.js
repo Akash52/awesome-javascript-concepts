@@ -62,23 +62,48 @@
 // }
 
 //Simple way write
-const calcArea = (radius) => 3.14 * radius ** 2
+// const calcArea = (radius) => 3.14 * radius ** 2
 
-const area = calcArea(5)
-console.log('area is : ', area)
+// const area = calcArea(5)
+// console.log('area is : ', area)
 
-const name = 'shaun'
+// const name = 'shaun'
 
-// Functions
+// // Functions
 
-const greet = () => 'Hello'
+// const greet = () => 'Hello'
 
-let resultOne = greet()
+// let resultOne = greet()
 
-console.log(resultOne)
+// console.log(resultOne)
 
-// Methods
+// // Methods
 
-let resultTwo = name.toUpperCase()
+// let resultTwo = name.toUpperCase()
 
-console.log(resultTwo)
+// console.log(resultTwo)
+
+// callbacks & foreach
+
+// const myFun = (callbackFun) => {
+//   //do something
+//   let value = 50
+//   callbackFun(value)
+// }
+
+// myFun((value) => {
+//   // do something
+//   console.log(value)
+// })
+
+let people = ['mario', 'luigi', 'ryu', 'shaoun', 'chun-li']
+
+const logPerson = (person, index) => {
+  console.log(`${index} - hello ${person}`)
+}
+
+people.forEach(logPerson)
+
+// people.forEach((person, index) => {
+//   console.log(index, person)
+// })
