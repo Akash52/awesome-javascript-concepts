@@ -96,14 +96,34 @@
 //   console.log(value)
 // })
 
-let people = ['mario', 'luigi', 'ryu', 'shaoun', 'chun-li']
+// let people = ['mario', 'luigi', 'ryu', 'shaoun', 'chun-li']
 
-const logPerson = (person, index) => {
-  console.log(`${index} - hello ${person}`)
-}
+// const logPerson = (person, index) => {
+//   console.log(`${index} - hello ${person}`)
+// }
 
-people.forEach(logPerson)
+// people.forEach(logPerson)
 
 // people.forEach((person, index) => {
 //   console.log(index, person)
 // })
+
+// callback function in actions
+
+const ul = document.querySelector('.people')
+
+let people = ['mario', 'luigi', 'ryu', 'shaoun', 'chun-li']
+
+let html = ` `
+
+people.forEach((person) => {
+  //create html template
+
+  html += `
+    <li style="color:purple">${person}</li>
+    `
+})
+
+console.log(html)
+
+ul.innerHTML = html
