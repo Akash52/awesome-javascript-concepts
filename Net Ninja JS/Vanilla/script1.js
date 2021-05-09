@@ -66,3 +66,19 @@ const calcArea = (radius) => 3.14 * radius ** 2
 
 const area = calcArea(5)
 console.log('area is : ', area)
+
+const name = 'shaun'
+
+// Functions
+
+const greet = () => 'Hello'
+
+let resultOne = greet()
+
+console.log(resultOne)
+
+// Methods
+
+let resultTwo = name.toUpperCase()
+
+console.log(resultTwo)
