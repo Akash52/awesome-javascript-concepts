@@ -34,11 +34,11 @@
 
 //Arguments & Parameters
 
-const speak = function (name = 'sky', time = 'night') {
-  // Parameters
-  console.log(`Good ${time} ${name}`)
-}
+// const speak = function (name = 'sky', time = 'night') {
+//   // Parameters
+//   console.log(`Good ${time} ${name}`)
+// }
 
-speak('jhon doe', 'Morning') // Arguments
-speak() // if we can not pass value than its log default value
-speak('jhone doe') // second argument automatic pass
+// speak('jhon doe', 'Morning') // Arguments
+// speak() // if we can not pass value than its log default value
+// speak('jhone doe') // second argument automatic pass
