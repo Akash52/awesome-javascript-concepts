@@ -45,12 +45,24 @@
 
 // Returning value
 
-const calcArea = function (radius) {
-  let area = 3.14 * radius ** 2
-  //console.log(area)
-  return area
-}
-const area = calcArea(5)
-console.log(area)
+// const calcArea = function (radius) {
+//   let area = 3.14 * radius ** 2
+//   //console.log(area)
+//   return area
+// }
+// const area = calcArea(5)
+// console.log(area)
 //calcArea(5)
 //console.log(area)// not work bcz area has local scope
+
+// Arraw function
+
+// const calcArea = (radius) => {
+//   return 3.14 * radius ** 2
+// }
+
+//Simple way write
+const calcArea = (radius) => 3.14 * radius ** 2
+
+const area = calcArea(5)
+console.log('area is : ', area)
