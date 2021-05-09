@@ -42,3 +42,15 @@
 // speak('jhon doe', 'Morning') // Arguments
 // speak() // if we can not pass value than its log default value
 // speak('jhone doe') // second argument automatic pass
+
+// Returning value
+
+const calcArea = function (radius) {
+  let area = 3.14 * radius ** 2
+  //console.log(area)
+  return area
+}
+const area = calcArea(5)
+console.log(area)
+//calcArea(5)
+//console.log(area)// not work bcz area has local scope
