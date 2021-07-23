@@ -393,6 +393,32 @@ val =numbers.find(under50);
  
 console.log(numbers);
 console.log(val);
+
+//Net Ninja
+
+let ninjas = ['abc', 'def', 'jhi', 'jkl']
+
+ninjas[0] = 'ken'
+console.log(ninjas[0])
+
+let ages = [23, 34, 2, 3, 34]
+console.log(ages[1])
+
+let random = ['show', 'look', '23', '3']
+console.log(random)
+
+console.log(random.length)
+
+// Array methods
+
+//let result_ = ninjas.join('-') //join together
+//let result_ = ninjas.indexOf('def')
+//let result_ = ninjas.concat('kne', 'crystal')
+//let result_ = ninjas.push('kne')
+
+result_ = ninjas.pop()
+console.log(ninjas)
+0 comments on commit 8b0ad50
 ```
 
 ### object and literals
