@@ -111,6 +111,30 @@ const numbers=[1,2,3,4,5];
 numbers.push(6);
 
 console.log(numbers);
+
+//Boolean
+console.log(true, false)
+
+// Methods can return booleans
+
+let eemail = 'abc@gmail.com'
+//let result = eemail.includes('@')
+//console.log(result) // True becase include @ symbol
+let names = ['ABC', 'bowser', 'DEF']
+//let result = eemail.includes('@')
+let result = names.includes('A')
+console.log(result)
+
+// Comparison Operators
+
+let ege = 25
+console.log(ege == 25) // True
+console.log(ege == 30) // False
+console.log(ege != 35) // True
+console.log(ege > 20) //True
+console.log(ege < 20) // False
+console.log(ege <= 25) // True
+console.log(ege >= 25) //True
 ```
 
 ### Datatype PRIMITIVE REFERENCE
