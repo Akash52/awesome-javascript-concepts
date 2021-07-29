@@ -325,6 +325,19 @@ let emaill = 'mario@gmail.com'
 
 console.log(result)
 
+/->
+//-->Old Way Concatenation
+console.log('My name is' + name + ' and my age is :' + age)
+//-->New Way Template String
+const hello = `My Name is ${name} and i am ${age}`
+console.log(hello)
+const s = 'Hello World'
+console.log(s.length)
+console.log(s.toLowerCase())
+console.log(s.toUpperCase())
+console.log(s.substring(0, 5).toUpperCase())
+console.log(s.split(''))
+
 ```
 
 ### Template string
