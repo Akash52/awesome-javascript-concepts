@@ -706,6 +706,22 @@ console.log(sqaure(8));
 
 // console.log(resultTwo)
 
+//->
+
+//Single Expression
+var add = (a, b) => a + b
+//Single Argument
+var odd = (n) => n % 2
+//No Arguments
+var random = () => Math.random()
+//Multiple Expressions
+var shout = (s) => {
+  s = s.toUpperCase()
+  s = s + '!'
+  return s
+}
+
+
 // callbacks & foreach
 
 // const myFun = (callbackFun) => {
