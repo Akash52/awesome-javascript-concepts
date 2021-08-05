@@ -97,7 +97,7 @@ console.log(name);
 name="Steave smith"; // can't Re-assing variable
 const greeting;
 
-Const
+
 const Person={
     name: 'Akash',
     age : '20'
@@ -118,10 +118,10 @@ console.log(true, false)
 // Methods can return booleans
 
 let eemail = 'abc@gmail.com'
-//let result = eemail.includes('@')
-//console.log(result) // True becase include @ symbol
+let result = eemail.includes('@')
+console.log(result) // True becase include @ symbol
 let names = ['ABC', 'bowser', 'DEF']
-//let result = eemail.includes('@')
+let result = eemail.includes('@')
 let result = names.includes('A')
 console.log(result)
 
@@ -139,6 +139,7 @@ console.log(ege >= 25) //True
 
 ### Datatype PRIMITIVE REFERENCE
 ```javascript
+
 //PRIMITIVE
 
 //String
@@ -165,6 +166,7 @@ console.log(typeof sym);
 
 //Array
 const hobbies = ['movie', 'music'];
+
 //Object literal
 const address = {
 
@@ -194,7 +196,7 @@ val = String([1, 2, 3, 4]);
 val = (5).toString();
 val = (true).toString();
 
-//Stirng to Number
+//String to Number
 val = Number('5');
 val = Number(true);
 val = Number(false);
@@ -249,8 +251,6 @@ val = Math.max(45, 34, 54, 5);
 val = Math.random();
 val = Math.floor(Math.random() * 20 + 1);
 
-
-
 console.log(val);
 ```
 
@@ -264,11 +264,12 @@ let val;
 val = firstname + lastname;
 
 //Concatenation
+
 val = firstname + '' + lastname;
 
 //Append
-val = 'Brad ';
-val += ' Traversy';
+val = 'Brad';
+val += 'Traversy';
 const age=50;
 const str='Hello there my name is Akash';
 
@@ -325,9 +326,9 @@ let emaill = 'mario@gmail.com'
 
 console.log(result)
 
-/->
 //-->Old Way Concatenation
 console.log('My name is' + name + ' and my age is :' + age)
+
 //-->New Way Template String
 const hello = `My Name is ${name} and i am ${age}`
 console.log(hello)
@@ -379,8 +380,6 @@ const numbers=[42,34,45,33,32,34,43];
 const num2= new Array(22,34,433,3,43,43);
 const fruit=['Apple','Banana','Orange','Pear'];
 const mixed=[24,24,54,'Akash',44,'Chauhan',true,undefined,null];
-
-
 
 //Get array length
 
@@ -448,14 +447,14 @@ console.log(random.length)
 
 // Array methods
 
-//let result_ = ninjas.join('-') //join together
-//let result_ = ninjas.indexOf('def')
-//let result_ = ninjas.concat('kne', 'crystal')
-//let result_ = ninjas.push('kne')
+let result_ = ninjas.join('-') //join together
+let result_ = ninjas.indexOf('def')
+let result_ = ninjas.concat('kne', 'crystal')
+let result_ = ninjas.push('kne')
 
 result_ = ninjas.pop()
 console.log(ninjas)
-0 comments on commit 8b0ad50
+
 ```
 
 ### object and literals
@@ -513,7 +512,7 @@ val=today.getSeconds();
 console.log(val);
 ```
 
-### Coditional Statement 
+### Conditional Statement 
 ```javascript
 //Equal to
 const id=100;
@@ -530,6 +529,7 @@ if(id!=100){
 else{
     console.log('INCORRECT')
 }
+
 //EQUAL TO VALUE & TYPE
 if(id===100){
     console.log('CORRECT');
@@ -550,6 +550,7 @@ if(typeof id!=='undefined'){
 else{
     console.log(`NO ID`);
 }
+
 //GREATER OR LESS THAN
 if(id>100)
 {
@@ -558,6 +559,7 @@ if(id>100)
 else{
     console.log('NO');
 }
+
 //IF ELSE
 const color='RED';
 if(color==='RED')
@@ -570,6 +572,7 @@ else if(color==='BLUE'){
 else{
     console.log('YELLOW')
 }
+
 //LOGICAL OPERATOR
 const name='Steave';
 const age=20;
@@ -583,6 +586,7 @@ if(age>0 && age<12)
 else{
     console.log(`${name} is adult`);
 }
+
 //OR 
 if(age<16 || age>65){
     console.log(`${name} can not run in race`);
@@ -599,11 +603,13 @@ function greeting(firtsName,lastname) {
 }
 greeting();
 console.log(greeting('Akash','Doe')); //Passing variable
-FUNCTION EXPRESSION
+
+//FUNCTION EXPRESSION
 const sqaure=function(x){
     return x*x;
 }
 console.log(sqaure(8));
+
 //PROPERTY METHODS
     const todo={
         add:function()
@@ -621,20 +627,18 @@ console.log(sqaure(8));
     todo.edit(20);
     todo.delete();
     
-    // // Function declaration
+// Function declaration
 
-// function greet() {
-//   console.log('Hello There')
-// }
+function greet() {
+   console.log('Hello There')
+ }
 
-// //function expression
+//function expression
 
-// /*we can not do these bcz javascript does not Hoisting
-// function expresssion*/
 
-// const speak = function () {
-//   console.log('Good day !')
-// }
+ const speak = function () {
+ console.log('Good day !')
+ }
 
 // greet() // calling or invoking fuction
 // greet()
@@ -644,69 +648,66 @@ console.log(sqaure(8));
 // speak()
 // speak()
 
-// //function hoisting in
+//function hoisting 
 
-// /*
-// Hoisting is a JavaScript mechanism where variables and function declarations
-// are moved to the top of their scope before code execution
-// */
+ /* Hoisting is a JavaScript mechanism where variables and function declarations
+ are moved to the top of their scope before code execution
+*/
 
-// function greet() {
-//   console.log('Hello There')
-// }
+ function greet() {
+   console.log('Hello There')
+ }
 
 //Arguments & Parameters
 
-// const speak = function (name = 'sky', time = 'night') {
-//   // Parameters
-//   console.log(`Good ${time} ${name}`)
-// }
+ const speak = function (name = 'sky', time = 'night') {
+  // Parameters
+  console.log(`Good ${time} ${name}`)
+ }
 
-// speak('jhon doe', 'Morning') // Arguments
-// speak() // if we can not pass value than its log default value
-// speak('jhone doe') // second argument automatic pass
+speak('jhon doe', 'Morning') // Arguments
+ speak() // if we can not pass value than its log default value
+ speak('jhone doe') // second argument automatic pass
 
 // Returning value
 
-// const calcArea = function (radius) {
-//   let area = 3.14 * radius ** 2
-//   //console.log(area)
-//   return area
-// }
-// const area = calcArea(5)
-// console.log(area)
-//calcArea(5)
-//console.log(area)// not work bcz area has local scope
+ const calcArea = function (radius) {
+   let area = 3.14 * radius ** 2
+   //console.log(area)
+   return area
+ }
+const area = calcArea(5)
+console.log(area)
+calcArea(5)
+console.log(area)// not work bcz area has local scope
 
 // Arraw function
 
-// const calcArea = (radius) => {
-//   return 3.14 * radius ** 2
-// }
+ const calcArea = (radius) => {
+   return 3.14 * radius ** 2
+ }
 
 //Simple way write
-// const calcArea = (radius) => 3.14 * radius ** 2
+ const calcArea = (radius) => 3.14 * radius ** 2
 
-// const area = calcArea(5)
-// console.log('area is : ', area)
+ const area = calcArea(5)
+ console.log('area is : ', area)
 
-// const name = 'shaun'
+ const name = 'shaun'
 
-// // Functions
+// Functions
 
-// const greet = () => 'Hello'
+ const greet = () => 'Hello'
 
-// let resultOne = greet()
+ let resultOne = greet()
 
-// console.log(resultOne)
+ console.log(resultOne)
 
-// // Methods
+ // Methods
 
-// let resultTwo = name.toUpperCase()
+ let resultTwo = name.toUpperCase()
 
 // console.log(resultTwo)
-
-//->
 
 //Single Expression
 var add = (a, b) => a + b
@@ -724,28 +725,28 @@ var shout = (s) => {
 
 // callbacks & foreach
 
-// const myFun = (callbackFun) => {
-//   //do something
-//   let value = 50
-//   callbackFun(value)
-// }
+ const myFun = (callbackFun) => {
+   //do something
+   let value = 50
+   callbackFun(value)
+ }
 
-// myFun((value) => {
-//   // do something
-//   console.log(value)
-// })
+ myFun((value) => {
+   // do something
+   console.log(value)
+ })
 
-// let people = ['mario', 'luigi', 'ryu', 'shaoun', 'chun-li']
+ let people = ['mario', 'luigi', 'ryu', 'shaoun', 'chun-li']
 
-// const logPerson = (person, index) => {
-//   console.log(`${index} - hello ${person}`)
-// }
+const logPerson = (person, index) => {
+   console.log(`${index} - hello ${person}`)
+ }
 
-// people.forEach(logPerson)
+ people.forEach(logPerson)
 
-// people.forEach((person, index) => {
-//   console.log(index, person)
-// })
+ people.forEach((person, index) => {
+   console.log(index, person)
+ })
 
 // callback function in actions
 
@@ -757,7 +758,6 @@ let html = ` `
 
 people.forEach((person) => {
   //create html template
-
   html += `
     <li style="color:purple">${person}</li>
     `
