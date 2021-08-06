@@ -314,15 +314,15 @@ console.log(val);
 
 let emaill = 'mario@gmail.com'
 
-//let result = emaill.lastIndexOf('a')
+let result = emaill.lastIndexOf('a')
 
-//let result = emaill.slice(2, 5) // 2 to 5 return
+let result = emaill.slice(2, 5) // 2 to 5 return
 
-//let result = emaill.substr(4, 6) // 4 to + 6 character return
+let result = emaill.substr(4, 6) // 4 to + 6 character return
 
-//let result = emaill.replace('m', 'w')
+let result = emaill.replace('m', 'w')
 
-//let result = emaill.replace('a', 'w')
+let result = emaill.replace('a', 'w')
 
 console.log(result)
 
