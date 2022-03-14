@@ -883,3 +883,7 @@ function getJokes(e) {
 ```
 
 <img src="https://i.ibb.co/5rxBLNB/Screenshot-from-2022-03-14-09-32-13.png" alt="Screenshot-from-2022-03-14-09-32-13" border="0">
+
+## Capturing & Bubbling
+
+<img src="https://i.ibb.co/VHwhrm5/Screenshot-from-2022-03-14-09-28-37.png" alt="Screenshot-from-2022-03-14-09-28-37" border="0">
