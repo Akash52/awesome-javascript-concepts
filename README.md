@@ -376,60 +376,85 @@ html=`
 document.body.innerHTML=html;
 ```
 ### Create some arrays
+
 ```javascript
 const numbers=[42,34,45,33,32,34,43];
 const num2= new Array(22,34,433,3,43,43);
 const fruit=['Apple','Banana','Orange','Pear'];
 const mixed=[24,24,54,'Akash',44,'Chauhan',true,undefined,null];
+```
 
-//Get array length
-
+#### Get array length
+```javascript
 val=numbers.length;
-
-//Check if is array
+```
+#### Check if is array
+```javascript
 val = Array.isArray(numbers);
-
-// Get single value 
+```
+#### Get single value 
+```javascript
 val=numbers[3];
 val =numbers[0];
-//Insert into array 
+```
+### Insert into array
+```javascript
 numbers[2]=100;
-//Find index of value
+```
+#### Find index of value
+```javascript
 val=numbers.indexOf(43);
+```
 
-//MUTING ARRAYS
+### MUTING ARRAYS
 
-//Add on to end 
+#### Add on to end
+```javascript
 numbers.push(250);
-//Add on to front
+```
+#### Add on to front
+```javascript
 numbers.unshift(120);
-//Take of from end
+```
+#### Take of from end
+```javascript
 numbers.pop();
-//Take from front
+```
+#### Take from front
+```javascript
 numbers.shift();
-//Splice values 
+```
+#### Splice values
+```javascript
 numbers.splice(1,3);
-//reverse 
+```
+#### reverse
+```javascript
 numbers.reverse();
-//Concatenate array
+```
+#### Concatenate array
+```javascript
 val=numbers.concat(num2);
-//Sorting array
+```
+#### Sorting array
+```javascript
 val=numbers.sort();
 val=fruit.sort();
-//Use the "compare funtion"
+```
+#### Use the "compare funtion"
+```javascript
 val=numbers.sort(function(x,y){
     return x-y;
 });
+````
 
-//Find 
+#### Find
+```javascript
 function under50(num){
     return num<50;
 }
-
 val =numbers.find(under50);
- 
-console.log(numbers);
-console.log(val);
+```
 
 //Net Ninja
 
