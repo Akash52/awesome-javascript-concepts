@@ -268,6 +268,8 @@ val = firstname + lastname;
 
 val = firstname + '' + lastname;
 
+```
+
 //Append
 val = 'Brad';
 val += 'Traversy';
