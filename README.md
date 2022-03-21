@@ -269,7 +269,7 @@ val = firstname + lastname;
 val = firstname + '' + lastname;
 
 ```
-
+```javascript
 //Append
 val = 'Brad';
 val += 'Traversy';
@@ -278,7 +278,7 @@ const str='Hello there my name is Akash';
 
 val = 'Hello,my name is' + firstname + 'and I am ' + age;
 const tags='web design,web development,full stack,mean stack,mern stack';
-
+```
 //Escaping
 val = 'That\'s awesome, I can\'t wait';
 
