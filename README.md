@@ -279,38 +279,48 @@ const str='Hello there my name is Akash';
 val = 'Hello,my name is' + firstname + 'and I am ' + age;
 const tags='web design,web development,full stack,mean stack,mern stack';
 ```
+```javascript
 //Escaping
-val = 'That\'s awesome, I can\'t wait';
-
+val = 'That\'s awesome, I can\'t wait'
+```
+```javascript
 //Length
 val=firstname.length;
-
+```
+```javascript
 //concat
 val=firstname.concat(' ',lastname);
-
+```
+```javascript
 //Change case
 val=firstname.toUpperCase();
 val=lastname.toLowerCase();
-
+```
+```javascript
 //Sub string
 val=firstname.substring(0,4);
-
+```
+```javascript
 //slice
 val=firstname.slice(0,4); 
 val=firstname.slice(-3); //you can use negative number
+```javascript
 
 //Split
 val=str.split(' ');
 val=tags.split(',')
-
+```
+```javascript
 //Replace
 val=str.replace('Akash','jack');
-
+```
+```javascript
 //Include
 val=str.includes('Hello'); //If available then return true
 val=str.includes('foo');  //if not false
 
 console.log(val);
+```
 
 //Net Ninja
 // Common string methods
