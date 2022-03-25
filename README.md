@@ -322,36 +322,42 @@ val=str.includes('foo');  //if not false
 console.log(val);
 ```
 
-//Net Ninja
-// Common string methods
+### Common string methods
 
+```javascript
 let emaill = 'mario@gmail.com'
-
+```
+```javascript
 let result = emaill.lastIndexOf('a')
-
+```
+```javascript
 let result = emaill.slice(2, 5) // 2 to 5 return
-
+```
+```javascript
 let result = emaill.substr(4, 6) // 4 to + 6 character return
-
+```
+```javascript
 let result = emaill.replace('m', 'w')
-
+```
+```javascript
 let result = emaill.replace('a', 'w')
-
-console.log(result)
-
+```
+```javascript
 //-->Old Way Concatenation
 console.log('My name is' + name + ' and my age is :' + age)
-
+```
+```javascript
 //-->New Way Template String
 const hello = `My Name is ${name} and i am ${age}`
 console.log(hello)
+```
+```javascript
 const s = 'Hello World'
 console.log(s.length)
 console.log(s.toLowerCase())
 console.log(s.toUpperCase())
 console.log(s.substring(0, 5).toUpperCase())
 console.log(s.split(''))
-
 ```
 
 ### Template string
@@ -362,7 +368,8 @@ const age='30';
 const job='Web Developer';
 const city='Rajkot';
 let html;
-
+```
+```javascript
 //Without template string (es5)
 
 html='<ul><li>Name :'+ name +'</li><li>Age:'+ age + '</li><li>Job:'+job+'</li><li>City:'+city+'</li></ul>';
@@ -468,23 +475,25 @@ function under50(num){
 val =numbers.find(under50);
 ```
 
-//Net Ninja
 
+```javascript
 let ninjas = ['abc', 'def', 'jhi', 'jkl']
 
 ninjas[0] = 'ken'
 console.log(ninjas[0])
-
+```
+```javascript
 let ages = [23, 34, 2, 3, 34]
 console.log(ages[1])
-
+```
+```javascript
 let random = ['show', 'look', '23', '3']
 console.log(random)
-
 console.log(random.length)
+```
 
-// Array methods
-
+### Array methods
+```javascript
 let result_ = ninjas.join('-') //join together
 let result_ = ninjas.indexOf('def')
 let result_ = ninjas.concat('kne', 'crystal')
@@ -633,7 +642,7 @@ if(age<16 || age>65){
 }
 ```
 
-### Function declaration 
+### Function 
 ```javascript
 function greeting(firtsName,lastname) {
     //console.log('Hello');
@@ -641,14 +650,16 @@ function greeting(firtsName,lastname) {
 }
 greeting();
 console.log(greeting('Akash','Doe')); //Passing variable
+```
 
-//FUNCTION EXPRESSION
+### FUNCTION EXPRESSION
+```javascript
 const sqaure=function(x){
     return x*x;
 }
 console.log(sqaure(8));
-
-//PROPERTY METHODS
+```
+### PROPERTY METHODS
     const todo={
         add:function()
         {
@@ -664,16 +675,16 @@ console.log(sqaure(8));
     todo.add();
     todo.edit(20);
     todo.delete();
-    
-// Function declaration
-
+    ```
+### Function declaration
+```javascript
 function greet() {
    console.log('Hello There')
  }
+ ```
+### function expression
 
-//function expression
-
-
+```javascript
  const speak = function () {
  console.log('Good day !')
  }
@@ -685,19 +696,21 @@ function greet() {
 // speak() // we can also call function multiple time
 // speak()
 // speak()
+```
 
-//function hoisting 
-
- /* Hoisting is a JavaScript mechanism where variables and function declarations
+#### function hoisting 
+```javascript
+  Hoisting is a JavaScript mechanism where variables and function declarations
  are moved to the top of their scope before code execution
-*/
-
+```javascript
+```javascript
  function greet() {
    console.log('Hello There')
  }
+```
 
-//Arguments & Parameters
-
+### Arguments & Parameters
+```javascript
  const speak = function (name = 'sky', time = 'night') {
   // Parameters
   console.log(`Good ${time} ${name}`)
@@ -706,9 +719,9 @@ function greet() {
 speak('jhon doe', 'Morning') // Arguments
  speak() // if we can not pass value than its log default value
  speak('jhone doe') // second argument automatic pass
-
-// Returning value
-
+ ```
+### Returning value
+```javascript
  const calcArea = function (radius) {
    let area = 3.14 * radius ** 2
    //console.log(area)
@@ -719,61 +732,71 @@ console.log(area)
 calcArea(5)
 console.log(area)// not work bcz area has local scope
 
-// Arraw function
+```
 
+### Arraw function
+```javascript
  const calcArea = (radius) => {
    return 3.14 * radius ** 2
  }
+ ```
 
-//Simple way write
+### Simple way write
+```javascript
  const calcArea = (radius) => 3.14 * radius ** 2
 
  const area = calcArea(5)
  console.log('area is : ', area)
 
  const name = 'shaun'
+ ```
 
-// Functions
-
+### Functions
+```javascript
  const greet = () => 'Hello'
 
  let resultOne = greet()
 
  console.log(resultOne)
+```
 
- // Methods
+### Methods
 
+```javascript
  let resultTwo = name.toUpperCase()
-
-// console.log(resultTwo)
-
+ console.log(resultTwo)
 //Single Expression
 var add = (a, b) => a + b
+
 //Single Argument
 var odd = (n) => n % 2
+
 //No Arguments
 var random = () => Math.random()
+
 //Multiple Expressions
 var shout = (s) => {
   s = s.toUpperCase()
   s = s + '!'
   return s
 }
+```
 
-
-// callbacks & foreach
-
+ ### callbacks & foreach
+```javascript
  const myFun = (callbackFun) => {
    //do something
    let value = 50
    callbackFun(value)
  }
-
+ ```
+```javascript
  myFun((value) => {
    // do something
    console.log(value)
  })
-
+ ```
+```javascript
  let people = ['mario', 'luigi', 'ryu', 'shaoun', 'chun-li']
 
 const logPerson = (person, index) => {
@@ -785,9 +808,11 @@ const logPerson = (person, index) => {
  people.forEach((person, index) => {
    console.log(index, person)
  })
+ 
+ ```
 
-// callback function in actions
-
+### callback function in actions
+```javascript
 const ul = document.querySelector('.people')
 
 let people = ['mario', 'luigi', 'ryu', 'shaoun', 'chun-li']
