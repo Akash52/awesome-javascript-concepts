@@ -947,6 +947,12 @@ function getJokes(e) {
 ## Note 
 ### Arrow functions
 - arrows share the same lexical this as their surrounding code.
+## Template Strings
+- Template strings provide syntactic sugar for constructing strings. 
+## Destructuring
+- extracting multiple values from data stored in (possibly nested) objects and Arrays.
+## Destructuring
+- extracting multiple values from data stored in (possibly nested) objects and Arrays.
 
 ## Promise 
 
