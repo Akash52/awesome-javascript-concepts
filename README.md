@@ -945,12 +945,18 @@ function getJokes(e) {
 }
 ```
 ## Note 
+### let, const and block scoping
+- Hoisting of let and const vary from the traditional hoisting of variables and functions. Both let and const are hoisted, but cannot be accessed before their declaration, because of Temporal Dead Zone
+
 ### Arrow functions
 - arrows share the same lexical this as their surrounding code.
+
 ## Template Strings
 - Template strings provide syntactic sugar for constructing strings. 
+
 ## Destructuring
 - extracting multiple values from data stored in (possibly nested) objects and Arrays.
+
 ## Destructuring
 - extracting multiple values from data stored in (possibly nested) objects and Arrays.
 
