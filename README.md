@@ -944,6 +944,10 @@ function getJokes(e) {
   e.preventDefault()
 }
 ```
+## Note 
+### Arrow functions
+- arrows share the same lexical this as their surrounding code.
+
 ## Promise 
 
 <img src="https://i.ibb.co/5rxBLNB/Screenshot-from-2022-03-14-09-32-13.png" alt="Screenshot-from-2022-03-14-09-32-13" border="0">
