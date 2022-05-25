@@ -26,3 +26,47 @@ rightArray = unsortedArray.sort((a, b) => a - b)
 
 console.log(sortedArray)
 console.log(rightArray)
+
+//Example 2
+
+var items = [
+  { name: 'Edward', value: 21 },
+  { name: 'Sharpe', value: 37 },
+  { name: 'And', value: 45 },
+  { name: 'The', value: -12 },
+  { name: 'Magnetic', value: 13 },
+  { name: 'Zeros', value: 37 },
+]
+
+function sortByName(a, b) {
+  return a.name > b.name ? 1 : -1
+}
+
+console.log(items.sort(sortByName))
+
+function sortByValue(a, b) {
+  return a.value - b.value
+}
+console.log(items.sort(sortByValue))
+
+//Example 3
+// Array is converted to a array of objects
+// A comparision function is fed to sort
+
+let list = ['Delta', 'alpha', 'CHARLIE', 'bravo']
+
+// Temporary array holds objects with position and sort-value
+var mapped = list.map((item, index) => {
+  return {
+    index: index,
+    value: item.toLowerCase(),
+  }
+})
+
+console.log(mapped) // [ { index: 0, value: 'delta' }, { index: 1, value: 'alpha' }, { index: 2, value: 'charlie' }, { index: 3, value: 'bravo' } ]
+
+// Sorting the mapped array containing the reduced values
+mapped.sort((a, b) => {
+  return a.value > b.value ? 1 : -1
+})
+console.log(mapped) // [ { index: 2, value: 'charlie' }, { index: 3, value: 'bravo' }, { index: 0, value: 'delta' }, { index: 1, value: 'alpha' } ]
