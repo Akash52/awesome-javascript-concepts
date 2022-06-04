@@ -1,6 +1,0 @@
-1.failed to push some refs to 
-
-git pull --rebase origin master
-git push origin master
-
-npm install --save module_name
