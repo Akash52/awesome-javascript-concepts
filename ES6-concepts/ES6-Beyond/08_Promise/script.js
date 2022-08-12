@@ -3,7 +3,12 @@ const output = document.getElementById('output');
 const body = document.querySelector('body');
 
 fetch(API_URL)
-  .then((response) => response.json())
+  .then((response) => {
+    if (response.ok) {
+      return response.json();
+    }
+    throw new Error('Request failed!');
+  })
   .then((data) => {
     output.innerText = getFilmTitle(data);
   })
