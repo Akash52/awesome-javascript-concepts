@@ -1,6 +1,6 @@
 const API_URL = 'https://starwars.egghead.training/films';
 const output = document.getElementById('output');
-const body = document.querySelector('body');
+const spinner = document.getElementById('spinner');
 
 fetch(API_URL)
   .then((response) => {
@@ -12,7 +12,10 @@ fetch(API_URL)
   .then((data) => {
     output.innerText = getFilmTitle(data);
   })
-  .catch(handleError);
+  .catch(handleError)
+  .finally(() => {
+    spinner.style.display = 'none';
+  });
 
 function getFilmTitle(data) {
   return data
@@ -22,8 +25,9 @@ function getFilmTitle(data) {
 }
 
 function handleError(error) {
-  output.innerText = 'Error';
-  console.error(error);
+  console.log(error);
+  const { message } = error;
+  output.innerText = message;
 }
 
 // const films = fetch(API_URL);
@@ -46,8 +50,3 @@ function handleError(error) {
 //   .then(() => {
 //     console.log('then');
 //   });
-
-body.style.backgroundColor = '#000';
-body.style.color = '#fff';
-body.style.fontSize = '1.5rem';
-body.style.fontFamily = 'monospace';

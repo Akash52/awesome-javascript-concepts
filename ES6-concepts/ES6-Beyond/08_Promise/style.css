@@ -1,0 +1,20 @@
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  font-family: 'monospace';
+  font-size: 1.5rem;
+  line-height: 1.42857143;
+  color: #fff;
+  background-color: #333;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  margin: 15px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
