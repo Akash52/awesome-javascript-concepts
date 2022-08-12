@@ -7,7 +7,7 @@ fetch(API_URL)
     if (response.ok) {
       return response.json();
     }
-    throw new Error('Request failed!');
+    return Promise.reject(new Error('Error fetching data'));
   })
   .then((data) => {
     output.innerText = getFilmTitle(data);
