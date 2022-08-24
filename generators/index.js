@@ -61,3 +61,16 @@ const createReverseInterator = (arry) => ({
 for (let value of createReverseInterator(abcs)) {
   console.log(value);
 }
+
+//First generator
+
+const reverseInterator = function* (arry) {
+  let i = arry.length;
+  while (i > 0) {
+    yield arry[--i];
+  }
+};
+
+for (let value of reverseInterator(abcs)) {
+  console.log(value);
+}
