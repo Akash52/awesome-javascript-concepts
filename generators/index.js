@@ -74,3 +74,10 @@ const reverseInterator = function* (arry) {
 for (let value of reverseInterator(abcs)) {
   console.log(value);
 }
+
+const xyz = reverseInterator(abcs);
+
+console.log(xyz.next());
+console.log(xyz.next());
+console.log(xyz.next());
+console.log(xyz.next());
