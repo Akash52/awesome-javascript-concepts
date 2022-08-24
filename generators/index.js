@@ -43,3 +43,21 @@ const iterator3 = {
 for (let value of iterator3) {
   console.log(value);
 }
+
+//Custom array interator
+
+const createReverseInterator = (arry) => ({
+  [Symbol.iterator]() {
+    let i = arry.length;
+    return {
+      next: () => ({
+        value: arry[--i],
+        done: i < 0,
+      }),
+    };
+  },
+});
+
+for (let value of createReverseInterator(abcs)) {
+  console.log(value);
+}
