@@ -85,29 +85,53 @@ import "../assets/css/style.css";
 
 //Imperative vs Declarative Programming
 
+// const items = [
+//   { id: "🍔", name: "Super Burger", price: 399 },
+//   { id: "🍟", name: "Jumbo Fries", price: 199 },
+//   { id: "🥤", name: "Big Slurp", price: 299 },
+// ];
+
+//Imperative
+
+// const itemNamesImperative = [];
+
+// for (let i = 0; i < items.length; i++) {
+//   const item = items[i];
+//   itemNamesImperative.push(item);
+// }
+// console.log(items);
+// console.log(itemNamesImperative);
+
+// Declarative
+// const itemNamesDeclarative = items
+//   .map(function (item) {
+//     return item.price;
+//   })
+//   .reduce(function (price, nextPrice) {
+//     return price + nextPrice;
+//   });
+// console.log(itemNamesDeclarative);
+
+//Lambda Expressions VS Anonymous Functions
+
 const items = [
   { id: "🍔", name: "Super Burger", price: 399 },
   { id: "🍟", name: "Jumbo Fries", price: 199 },
   { id: "🥤", name: "Big Slurp", price: 299 },
 ];
 
-//Imperative
-
-const itemNamesImperative = [];
-
-for (let i = 0; i < items.length; i++) {
-  const item = items[i];
-  itemNamesImperative.push(item);
+function getItemName(item) {
+  return item.name;
 }
-console.log(items);
-console.log(itemNamesImperative);
+console.log(items.map(getItemName));
 
-// Declarative
-const itemNamesDeclarative = items
-  .map(function (item) {
-    return item.price;
+console.log(
+  items.map(function (item) {
+    return item.name;
   })
-  .reduce(function (price, nextPrice) {
-    return price + nextPrice;
-  });
-console.log(itemNamesDeclarative);
+);
+
+console.log(items.map((item) => item.name));
+
+const getItemNameExp = (item) => item.name;
+console.log(items.map(getItemNameExp));
