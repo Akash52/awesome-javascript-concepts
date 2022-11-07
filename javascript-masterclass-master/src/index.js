@@ -166,11 +166,34 @@ import "../assets/css/style.css";
 
 //Funtion Clousers
 
+// const items = [
+//   { id: "🍔", name: "Super Burger", price: 399 },
+//   { id: "🍟", name: "Jumbo Fries", price: 199 },
+//   { id: "🥤", name: "Big Slurp", price: 299 },
+// ];
+
+// const getNameFromId = (id) => {
+//   return (items) => {
+//     return items.find((item) => item.id === id).name;
+//   };
+// };
+
+// const getFires = getNameFromId("🍟");
+// const getBurger = getNameFromId("🍔");
+// console.log(getFires(items));
+// console.log(getBurger(items));
+
+//Higher-Oreder Functions
+
 const items = [
   { id: "🍔", name: "Super Burger", price: 399 },
   { id: "🍟", name: "Jumbo Fries", price: 199 },
   { id: "🥤", name: "Big Slurp", price: 299 },
 ];
+
+//HOF
+// 1. Return a new Function
+// 2. take other functions as arguments
 
 const getNameFromId = (id) => {
   return (items) => {
@@ -180,5 +203,6 @@ const getNameFromId = (id) => {
 
 const getFires = getNameFromId("🍟");
 const getBurger = getNameFromId("🍔");
+
 console.log(getFires(items));
 console.log(getBurger(items));
