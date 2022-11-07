@@ -114,24 +114,52 @@ import "../assets/css/style.css";
 
 //Lambda Expressions VS Anonymous Functions
 
+// const items = [
+//   { id: "🍔", name: "Super Burger", price: 399 },
+//   { id: "🍟", name: "Jumbo Fries", price: 199 },
+//   { id: "🥤", name: "Big Slurp", price: 299 },
+// ];
+
+// function getItemName(item) {
+//   return item.name;
+// }
+// console.log(items.map(getItemName));
+
+// console.log(
+//   items.map(function (item) {
+//     return item.name;
+//   })
+// );
+
+// console.log(items.map((item) => item.name));
+
+// const getItemNameExp = (item) => item.name;
+// console.log(items.map(getItemNameExp));
+
+//Pure Functions and Referential Transparency
+
+//Pure Funcgtions ?
+//1. Referential transparency
+//2. Side-Effect free
+
 const items = [
   { id: "🍔", name: "Super Burger", price: 399 },
   { id: "🍟", name: "Jumbo Fries", price: 199 },
   { id: "🥤", name: "Big Slurp", price: 299 },
 ];
 
-function getItemName(item) {
-  return item.name;
-}
-console.log(items.map(getItemName));
+//ImPure function
 
-console.log(
-  items.map(function (item) {
-    return item.name;
-  })
-);
+// const getTotalImpure = () => {
+//   document.querySelector("#app").innerHTML = items.reduce(
+//     (x, y) => x + y.price,
+//     0
+//   );
+// };
 
-console.log(items.map((item) => item.name));
+// getTotalImpure();
 
-const getItemNameExp = (item) => item.name;
-console.log(items.map(getItemNameExp));
+// Pure function
+
+const getTotalPure = (v) => v.reduce((x, y) => x + y.price, 0);
+document.querySelector("#app").innerHTML = getTotalPure(items);
