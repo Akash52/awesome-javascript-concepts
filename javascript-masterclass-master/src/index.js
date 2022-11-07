@@ -142,11 +142,11 @@ import "../assets/css/style.css";
 //1. Referential transparency
 //2. Side-Effect free
 
-const items = [
-  { id: "🍔", name: "Super Burger", price: 399 },
-  { id: "🍟", name: "Jumbo Fries", price: 199 },
-  { id: "🥤", name: "Big Slurp", price: 299 },
-];
+// const items = [
+//   { id: "🍔", name: "Super Burger", price: 399 },
+//   { id: "🍟", name: "Jumbo Fries", price: 199 },
+//   { id: "🥤", name: "Big Slurp", price: 299 },
+// ];
 
 //ImPure function
 
@@ -161,5 +161,24 @@ const items = [
 
 // Pure function
 
-const getTotalPure = (v) => v.reduce((x, y) => x + y.price, 0);
-document.querySelector("#app").innerHTML = getTotalPure(items);
+// const getTotalPure = (v) => v.reduce((x, y) => x + y.price, 0);
+// document.querySelector("#app").innerHTML = getTotalPure(items);
+
+//Funtion Clousers
+
+const items = [
+  { id: "🍔", name: "Super Burger", price: 399 },
+  { id: "🍟", name: "Jumbo Fries", price: 199 },
+  { id: "🥤", name: "Big Slurp", price: 299 },
+];
+
+const getNameFromId = (id) => {
+  return (items) => {
+    return items.find((item) => item.id === id).name;
+  };
+};
+
+const getFires = getNameFromId("🍟");
+const getBurger = getNameFromId("🍔");
+console.log(getFires(items));
+console.log(getBurger(items));
