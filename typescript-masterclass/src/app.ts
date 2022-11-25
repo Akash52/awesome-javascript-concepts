@@ -1,11 +1,3 @@
-//Function
-
-function myFunction() {
-  console.log("Function ::: ", this);
-}
-
-myFunction();
-
 //Object literal
 
 const myObject = {
@@ -16,13 +8,14 @@ const myObject = {
 
 myObject.myFunction();
 
-//Classes
+//Function
 
-class MyClass {
-  myFunction() {
-    console.log("Class ::: ", this);
-  }
+function myFunction(...text: string[]) {
+  console.log("Function ::: ", this, text);
 }
 
-const myClass = new MyClass();
-myClass.myFunction();
+const bindFunction = myFunction.bind(myObject);
+bindFunction("Hello", "World");
+bindFunction("123", "456");
+myFunction.call(myObject, "Hello", "World");
+myFunction.apply(myObject, ["Hello", "World"]);
