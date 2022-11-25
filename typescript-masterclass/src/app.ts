@@ -1,21 +1,13 @@
-//Object literal
-
-const myObject = {
-  myFunction: function () {
-    console.log("Object literal ::: ", this);
-  },
-};
-
-myObject.myFunction();
-
-//Function
-
-function myFunction(...text: string[]) {
-  console.log("Function ::: ", this, text);
+class MyClass {
+  myMethod() {
+    const foo = 123;
+    console.log("1", this);
+    //with arrow function
+    setTimeout(() => {
+      console.log("2", this);
+    }, 0);
+  }
 }
 
-const bindFunction = myFunction.bind(myObject);
-bindFunction("Hello", "World");
-bindFunction("123", "456");
-myFunction.call(myObject, "Hello", "World");
-myFunction.apply(myObject, ["Hello", "World"]);
+const myInstance = new MyClass();
+myInstance.myMethod();
