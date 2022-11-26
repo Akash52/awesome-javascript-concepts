@@ -4,6 +4,9 @@ const person = {
 };
 
 type Person = typeof person;
+type PersonKeys = keyof Person; // "name" | "age"
+
+type PersonTypes = Person[PersonKeys]; // "Max" | 30
 
 const anotherPerson: Person = {
   name: "Manu",
