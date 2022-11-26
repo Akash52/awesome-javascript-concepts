@@ -172,3 +172,23 @@ const person: Person = {
 const updatedPerson = updatePerson(person, { age: 52 });
 console.log(updatedPerson);
 ```
+
+### Required Mapped type
+
+```ts
+interface Person {
+  name: string;
+  age?: number;
+}
+
+function printAge(person: Required<Person>) {
+  return `${person.name} is ${person.age} years old.`;
+}
+
+const person: Required<Person> = {
+  name: "John",
+  age: 30,
+};
+
+const age = printAge(person);
+```

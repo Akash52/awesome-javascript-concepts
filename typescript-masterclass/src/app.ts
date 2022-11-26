@@ -1,25 +1,15 @@
 interface Person {
   name: string;
-  age: number;
+  age?: number;
 }
 
-// interface PartialPerson {
-//   name?: string;
-//   age?: number;
-// }
-
-type MyPartial<T> = {
-  [P in keyof T]?: T[P];
-};
-
-function updatePerson(person: Person, fieldsToUpdate: Partial<Person>) {
-  return { ...person, ...fieldsToUpdate };
+function printAge(person: Required<Person>) {
+  return `${person.name} is ${person.age} years old.`;
 }
 
-const person: Person = {
+const person: Required<Person> = {
   name: "John",
   age: 30,
 };
 
-const updatedPerson = updatePerson(person, { age: 52 });
-console.log(updatedPerson);
+const age = printAge(person);
