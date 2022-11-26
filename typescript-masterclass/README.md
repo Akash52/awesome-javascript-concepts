@@ -192,3 +192,56 @@ const person: Required<Person> = {
 
 const age = printAge(person);
 ```
+
+### Pick Mapped type
+
+```ts
+interface Person {
+  name: string;
+  age: number;
+  location: string;
+}
+
+type MyPick<T, K extends keyof T> = {
+  [P in K]: T[P];
+};
+
+function pick<T, K extends keyof T>(obj: T, keys: K[]): My
+Pick<T, K> {
+  return keys.reduce((acc, key) => {
+    return {
+      ...acc,
+      [key]: obj[key],
+    };
+  }, {} as MyPick<T, K>);
+}
+
+const person: Person = {
+  name: "John",
+  age: 30,
+  location: "USA",
+};
+
+const nameAndAgeOnly = pick(person, ["name", "age"]);
+
+console.log(nameAndAgeOnly);
+
+Example 2 : Pick Mapped type
+
+interface Person {
+  name: string;
+  age?: number;
+  address: {};
+}
+
+type MyPick<T, K extends keyof T> = {
+  [P in K]: T[P];
+};
+
+const person: Pick<Person, "name" | "age"> = {
+  name: "John",
+  age: 30,
+};
+
+
+```
