@@ -60,3 +60,19 @@ function handleClick(this: HTMLAnchorElement, event: Event) {
 
 elem.addEventListener("click", handleClick, false);
 ```
+
+//Type Query
+
+```js
+const person = {
+  name: "Max",
+  age: 30,
+};
+
+type Person = typeof person;
+
+const anotherPerson: Person = {
+  name: "Manu",
+  age: 31,
+};
+```
