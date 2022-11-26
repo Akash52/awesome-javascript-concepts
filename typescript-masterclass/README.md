@@ -41,3 +41,22 @@ class MyClass {
 const myInstance = new MyClass();
 myInstance.myMethod();
 ```
+
+### Type this keyword
+
+```html
+<div class="app">
+  <a href="#" class="click">Click me!</a>
+</div>
+```
+
+```js
+const elem = document.querySelector(".click");
+
+function handleClick(this: HTMLAnchorElement, event: Event) {
+  event.preventDefault();
+  console.log(this.href);
+}
+
+elem.addEventListener("click", handleClick, false);
+```
