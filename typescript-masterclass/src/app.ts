@@ -3,15 +3,23 @@ interface Person {
   age: number;
 }
 
+// interface PartialPerson {
+//   name?: string;
+//   age?: number;
+// }
+
+type MyPartial<T> = {
+  [P in keyof T]?: T[P];
+};
+
+function updatePerson(person: Person, fieldsToUpdate: Partial<Person>) {
+  return { ...person, ...fieldsToUpdate };
+}
+
 const person: Person = {
   name: "John",
   age: 30,
 };
 
-function freeze<T>(obj: T): Readonly<T> {
-  return Object.freeze(obj);
-}
-
-const newPerson = freeze(person);
-
-newPerson.age = 25; // Error: cannot assign to 'age' because it is a read-only property.
+const updatedPerson = updatePerson(person, { age: 52 });
+console.log(updatedPerson);
