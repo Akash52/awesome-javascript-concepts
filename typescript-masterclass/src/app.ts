@@ -1,19 +1,17 @@
-const person = {
-  name: "Max",
+interface Person {
+  name: string;
+  age: number;
+}
+
+const person: Person = {
+  name: "John",
   age: 30,
 };
 
-type Person = typeof person;
-type PersonKeys = keyof Person; // "name" | "age"
-type PersonTypes = Person[PersonKeys]; // "Max" | 30
-
-function getProperty<T, K extends keyof T>(obj: T, key: K) {
-  return obj[key];
+function freeze<T>(obj: T): Readonly<T> {
+  return Object.freeze(obj);
 }
 
-const personName = getProperty(person, "name");
+const newPerson = freeze(person);
 
-const anotherPerson: Person = {
-  name: "Manu",
-  age: 31,
-};
+newPerson.age = 25; // Error: cannot assign to 'age' because it is a read-only property.
