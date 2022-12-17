@@ -8,7 +8,7 @@ import "../assets/css/style.css";
 
 // console.log(items);
 
-//Immutable vs Mutable Concepts
+// Immutable vs Mutable Concepts
 
 // let a = "Apple Sky";
 // a = "Sky Apple";
@@ -21,7 +21,7 @@ import "../assets/css/style.css";
 // x.id = "😃";
 // console.log(x);
 
-//Immutable Data Strucuture Pattern
+// Immutable Data Strucuture Pattern
 
 // const items = [
 //   { id: "🍔", name: "Super Burger", price: 399 },
@@ -31,7 +31,7 @@ import "../assets/css/style.css";
 
 // console.log(items);
 
-//array - add
+// array - add
 
 // const newItem = {
 //   id: "🍎",
@@ -43,14 +43,14 @@ import "../assets/css/style.css";
 // console.log(items);
 // console.log(newItems);
 
-//array - remove
+// array - remove
 
 // const removed = items.splice(0, 1);
 // console.log(removed, items);
 // const updatedItems = items.filter((item) => item.id !== "🍔");
 // console.log(updatedItems, items);
 
-//Objects - add
+// Objects - add
 
 // const item = {
 //   id: "🍎",
@@ -63,7 +63,7 @@ import "../assets/css/style.css";
 // // item.price = 299;
 // console.log(item, itemThatIsNew);
 
-//Objects - remove
+// Objects - remove
 
 // const itemToRemove = {
 //   id: "🍎",
@@ -76,14 +76,14 @@ import "../assets/css/style.css";
 // console.log(price, itemToRemove);
 // console.log(leftOverItems);
 
-//identity
+// identity
 
 // console.log({} === {});
 // console.log([] === []);
 // console.log(itemToRemove === itemToRemove);
 // console.log(itemToRemove === leftOverItems);
 
-//Imperative vs Declarative Programming
+// Imperative vs Declarative Programming
 
 // const items = [
 //   { id: "🍔", name: "Super Burger", price: 399 },
@@ -91,7 +91,7 @@ import "../assets/css/style.css";
 //   { id: "🥤", name: "Big Slurp", price: 299 },
 // ];
 
-//Imperative
+// Imperative
 
 // const itemNamesImperative = [];
 
@@ -112,7 +112,7 @@ import "../assets/css/style.css";
 //   });
 // console.log(itemNamesDeclarative);
 
-//Lambda Expressions VS Anonymous Functions
+// Lambda Expressions VS Anonymous Functions
 
 // const items = [
 //   { id: "🍔", name: "Super Burger", price: 399 },
@@ -136,11 +136,11 @@ import "../assets/css/style.css";
 // const getItemNameExp = (item) => item.name;
 // console.log(items.map(getItemNameExp));
 
-//Pure Functions and Referential Transparency
+// Pure Functions and Referential Transparency
 
-//Pure Funcgtions ?
-//1. Referential transparency
-//2. Side-Effect free
+// Pure Funcgtions ?
+// 1. Referential transparency
+// 2. Side-Effect free
 
 // const items = [
 //   { id: "🍔", name: "Super Burger", price: 399 },
@@ -148,7 +148,7 @@ import "../assets/css/style.css";
 //   { id: "🥤", name: "Big Slurp", price: 299 },
 // ];
 
-//ImPure function
+// ImPure function
 
 // const getTotalImpure = () => {
 //   document.querySelector("#app").innerHTML = items.reduce(
@@ -164,7 +164,7 @@ import "../assets/css/style.css";
 // const getTotalPure = (v) => v.reduce((x, y) => x + y.price, 0);
 // document.querySelector("#app").innerHTML = getTotalPure(items);
 
-//Funtion Clousers
+// Funtion Clousers
 
 // const items = [
 //   { id: "🍔", name: "Super Burger", price: 399 },
