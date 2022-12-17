@@ -1,14 +1,16 @@
 import "../assets/css/style.css";
-//currying
+//Function Composition and Currying
 
-const items = [
-  { id: "🍔", name: "Super Burger", price: 399 },
-  { id: "🍟", name: "Jumbo Fries", price: 199 },
-  { id: "🥤", name: "Big Slurp", price: 299 },
-];
+// const items = [
+//   { id: "🍔", name: "Super Burger", price: 399 },
+//   { id: "🍟", name: "Jumbo Fries", price: 199 },
+//   { id: "🥤", name: "Big Slurp", price: 299 },
+// ];
 
-//f(a,b,c)
-//f(a)(b)(c)
+const compose =
+  (...fns) =>
+  (x) =>
+    fns.reduceRight((v, f) => f(v), x);
 
 const curry = (fn) => {
   return (...args) => {
@@ -19,12 +21,22 @@ const curry = (fn) => {
   };
 };
 
-const getNameFromId = curry(
-  (id, items) => items.find((item) => item.id === id).name
-);
+const split = curry((separator, string) => string.split(separator));
+const join = curry((separator, string) => string.join(separator));
+const map = curry((fn, array) => array.map(fn));
 
-const getFires = getNameFromId("🍟", items);
-const getBurger = getNameFromId("🍔"); //partially applying
+const toLowerCase = (x) => x.toLowerCase();
 
-console.log(getFires);
-console.log(getBurger(items));
+const slugify = compose(join("-"), map(toLowerCase), split(" "));
+
+console.log(slugify("Ultimate Courses"));
+console.log(slugify("Todd Motto"));
+
+// const slugify = (str) => join("-")(map(toLowerCase)(split(" ")(str)));
+// console.log(slugify("Ultimate Courses"));
+
+// const slugify = "Ultimate Courses"
+//   .split(" ")
+//   .map((x) => x.toLowerCase())
+//   .join("-");
+// console.log(slugify);
