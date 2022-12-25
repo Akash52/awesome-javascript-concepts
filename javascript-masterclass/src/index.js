@@ -1,9 +1,9 @@
 import "../assets/css/style.css";
 
-//Object Literals and Encapsulation
+//Object Literals and Factory Funtions
 
-const cart = {
-  items: [],
+const createCart = (items = []) => ({
+  items,
   add(item) {
     this.items.push(item);
   },
@@ -11,13 +11,15 @@ const cart = {
     const index = this.items.findIndex((x) => x.id === id);
     this.items.splice(index, 1);
   },
-};
+});
 
 const burger = {
   id: "🍔",
   name: "Burger King",
   price: 199,
 };
+
+const cart = createCart();
 
 cart.add(burger);
 console.log(cart);
