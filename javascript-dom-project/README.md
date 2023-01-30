@@ -54,3 +54,19 @@ console.log(document.nodeName);
 //tagName for any Element types
 console.log(document.tagName);
 ```
+
+#### Creating DOM Nodes
+
+```js
+const app = document.getElementById("app");
+
+const div = document.createElement("div");
+const text = document.createTextNode("DOM!");
+const comment = document.createComment("No comment");
+
+div.append(comment);
+div.append(text);
+div.append(app);
+
+console.log(app, div);
+```
