@@ -1,5 +1,7 @@
-import '../assets/css/style.css';
+import "../assets/css/style.css";
 
-const app = document.getElementById('app');
+const app = document.getElementById("app");
 
-app.innerHTML = ``;
+app.innerHTML = `
+<h1>Hell World!</h1>
+`;

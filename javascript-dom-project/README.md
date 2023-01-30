@@ -1,15 +1,56 @@
-<h1 align="center">
-<img width="40" valign="bottom" src="https://ultimatecourses.com/static/icons/javascript.svg">
-JavaScript DOM: Final Project
-</h1>
-<h4 align="center">Final Project for the Ultimate Courses <a href="https://ultimatecourses.com/learn/javascript-dom" target="_blank">JavaScript DOM course</a>.</h4>
+//JavaScript DOM
 
----
+#### DOM Nodes
 
-<div align="center">
-<a href="https://ultimatecourses.com/courses/javascript" target="_blank"><img width="100%" src="https://ultimatecourses.com/static/banners/ultimate-javascript-leader.svg"></a>
-</div>
+```js
+import "../assets/css/style.css";
 
----
+const app = document.getElementById("app");
 
-Members, please refer to the [course setup](https://ultimatecourses.com/course/javascript-dom) instructions to get started!
+app.innerHTML = `
+<h1>Hell World!</h1>
+`;
+
+//html
+console.log(document.documentElement);
+console.dir(document.documentElement);
+
+//<head>
+console.log(document.head);
+
+//<body>
+console.dir(document.body);
+
+//rerive the constructor name
+console.log(document.body.constructor.name);
+
+//looking at the prototype chain
+console.log(document.body instanceof HTMLBodyElement);
+console.log(document.body instanceof HTMLElement);
+console.log(document.body instanceof Element);
+console.log(document.body instanceof EventTarget);
+
+/*
+- NodeTypes
+1.Element
+2.Attribute
+3.Text
+4.CDATA section
+5.Entity reference
+6.Entity
+7.Processing instruction
+8.Comment
+9.Document
+10.Document type
+11.Document fragment
+12.Notation.
+ */
+
+console.log(document.body.nodeType);
+console.log(document.nodeType);
+
+//nodeName for any Node Types
+console.log(document.nodeName);
+//tagName for any Element types
+console.log(document.tagName);
+```
