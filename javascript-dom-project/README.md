@@ -238,3 +238,22 @@ console.log(newClone);
 
 app.append(newClone);
 ```
+
+#### Removing DOM Elements
+
+```js
+app.innerHTML = `
+<h1>
+JS DOM</h1>`;
+
+const div = document.createElement("div");
+div.innerText = "I am a message";
+
+app.append(div);
+
+// setTimeout(() => div.remove(), 2500);
+
+//Old Way
+
+setTimeout(() => div.parentNode.removeChild(div), 2500);
+```
