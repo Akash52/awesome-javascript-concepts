@@ -164,3 +164,20 @@ i.parentNode.insertBefore(b, i.nextSibling);
 
 console.log(div);
 ```
+
+#### Inserting DOM as String Templates
+
+```js
+app.innerHTML = `<h1>JS DOM</h1>
+<ul>
+<li>1</li>
+</ul>
+`;
+
+const ul = app.querySelector("ul");
+
+ul.insertAdjacentHTML("beforebegin", "<p>Before</p>");
+ul.insertAdjacentHTML("afterbegin", "<li>First</li>");
+ul.insertAdjacentHTML("beforeend", "<p>Last</p>");
+ul.insertAdjacentHTML("afterend", "<p>After</p>");
+```
