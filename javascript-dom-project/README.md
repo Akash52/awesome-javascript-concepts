@@ -257,3 +257,47 @@ app.append(div);
 
 setTimeout(() => div.parentNode.removeChild(div), 2500);
 ```
+
+## Querying and Traversing the DOM
+
+#### Querying DOM Nodes (HTMLCollections)
+
+```js
+app.innerHTML = `
+<h1>JavaScript DOM</h1>
+<ul id="list"></ul>
+`;
+
+const data = ["Earth", "Fire", "Water"];
+const fragment = document.createDocumentFragment();
+
+data.forEach((item) => {
+  const li = document.createElement("li");
+  li.className = "list-item";
+  li.innerText = item;
+  fragment.append(li);
+});
+
+//getElementByID : HTMLElement
+const ulFromId = document.getElementById("list");
+console.log(ulFromId);
+ulFromId.append(fragment);
+
+//getElementsByClassName : HTMLCollection
+const listItemsFromClassName = ulFromId.getElementsByClassName("list-item");
+console.log(listItemsFromClassName);
+
+//getElementByTagName
+const listItemsFromTagName = ulFromId.getElementsByTagName("li");
+console.log(listItemsFromTagName);
+
+//Demonstrate live collection
+const newListItem = document.createElement("li");
+newListItem.className = "list-item";
+newListItem.innerText = "Air!";
+ulFromId.append(newListItem);
+
+//No need to query again!
+console.log(listItemsFromClassName);
+console.log(listItemsFromTagName);
+```
