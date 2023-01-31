@@ -124,3 +124,19 @@ const inputFromTemplate = createInputTemplate({
 
 app.innerHTML += inputFromTemplate;
 ```
+
+#### Document Fragment
+
+```js
+const data = ["Earth", "Fire", "Water", "Air"];
+
+const fragment = document.createDocumentFragment();
+
+data.forEach((name) => {
+  const li = document.createElement("li");
+  li.innerText = name;
+  fragment.append(li);
+});
+
+app.append(fragment);
+```
