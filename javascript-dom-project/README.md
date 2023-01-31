@@ -87,3 +87,40 @@ console.log(app.innerHTML);
 console.log(app.innerText);
 console.log(app.textContent);
 ```
+
+#### innerHTML versus createElement
+
+```js
+//Using document.createElement()
+function createInputDOM({ label, type = "text" }) {
+  const lableEl = document.createElement("label");
+  const inputEL = document.createElement("input");
+  inputEL.type = type;
+  lableEl.innerText = label;
+  lableEl.append(inputEL);
+
+  return lableEl;
+}
+
+const inputFromDOM = createInputDOM({ label: "Name" });
+
+console.log(inputFromDOM.querySelector("input"));
+app.append(inputFromDOM);
+
+//Using string templates
+function createInputTemplate({ label, type = "text" }) {
+  return `
+    <label>
+    ${label}
+    <input type="${type}">
+    </label>
+    `;
+}
+
+const inputFromTemplate = createInputTemplate({
+  label: "Email",
+  type: "email",
+});
+
+app.innerHTML += inputFromTemplate;
+```
