@@ -301,3 +301,39 @@ ulFromId.append(newListItem);
 console.log(listItemsFromClassName);
 console.log(listItemsFromTagName);
 ```
+
+#### Querying DOM Nodes (NodeLists)
+
+```js
+app.innerHTML = `
+<h1>JavaScript DOM</h1>
+<ul id="list"></ul>
+`;
+
+const data = ["Earth", "Fire", "Water"];
+const fragment = document.createDocumentFragment();
+
+data.forEach((item) => {
+  const li = document.createElement("li");
+  li.className = "list-item";
+  li.innerText = item;
+  fragment.append(li);
+});
+
+const ulFromQuerySeletor = document.querySelector("ul");
+console.log(ulFromQuerySeletor);
+ulFromQuerySeletor.append(fragment);
+
+const listItemsFromQSA = ulFromQuerySeletor.querySelectorAll(".list-item");
+console.log(listItemsFromQSA);
+
+const newListItem = document.createElement("li");
+newListItem.className = "list-item";
+newListItem.innerText = "Air";
+ulFromQuerySeletor.append(newListItem);
+
+console.log(
+  listItemsFromQSA,
+  ulFromQuerySeletor.querySelectorAll(".list-item")
+);
+```
