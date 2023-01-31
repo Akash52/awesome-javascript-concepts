@@ -210,3 +210,31 @@ setTimeout(() => {
   newDiv.parentNode.replaceChild(anotherDiv, newDiv);
 }, 2000);
 ```
+
+#### Cloning DOM Elements
+
+```js
+app.innerHTML = `
+JS
+`;
+
+const div = document.createElement("div");
+const span = document.createElement("span");
+
+span.innerText = "Can you clone me ?";
+div.append(span);
+
+app.append(div);
+
+//cloneNode(flase) only clones the top element
+
+const clone = div.cloneNode();
+console.log(clone);
+
+//cloneNode(true) clones all elements and subtrees
+
+const newClone = div.cloneNode(true);
+console.log(newClone);
+
+app.append(newClone);
+```
