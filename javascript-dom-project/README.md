@@ -181,3 +181,32 @@ ul.insertAdjacentHTML("afterbegin", "<li>First</li>");
 ul.insertAdjacentHTML("beforeend", "<p>Last</p>");
 ul.insertAdjacentHTML("afterend", "<p>After</p>");
 ```
+
+#### Replacing DOM Elements
+
+```js
+app.innerHTML = `
+<h1>
+JavaScript Dom
+</h1>
+<div>
+Replace Me!
+</div>
+`;
+
+const div = app.querySelector("div");
+
+const newDiv = document.createElement("div");
+newDiv.innerText = "I have been replaced";
+
+//new way
+div.replaceWith(newDiv);
+
+//old way
+const anotherDiv = document.createElement("div");
+anotherDiv.innerText = "I replace All";
+
+setTimeout(() => {
+  newDiv.parentNode.replaceChild(anotherDiv, newDiv);
+}, 2000);
+```
