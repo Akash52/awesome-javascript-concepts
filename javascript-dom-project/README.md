@@ -140,3 +140,27 @@ data.forEach((name) => {
 
 app.append(fragment);
 ```
+
+#### Inserting DOM Elements
+
+```js
+const div = document.createElement("div");
+const span = document.createElement("span");
+const p = document.createElement("p");
+const i = document.createElement("i");
+const b = document.createElement("b");
+
+div.append(span);
+div.prepend(p);
+// p.before(i);
+p.after(i);
+
+//old way using insertBefore
+// i.parentNode.insertBefore(b, i);
+
+//After : old way using insertBefore + nextSibling
+
+i.parentNode.insertBefore(b, i.nextSibling);
+
+console.log(div);
+```
