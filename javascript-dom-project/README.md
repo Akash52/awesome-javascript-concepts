@@ -70,3 +70,20 @@ div.append(app);
 
 console.log(app, div);
 ```
+
+#### Changing Content of DOM Elements
+
+```js
+const app = document.getElementById("app");
+app.innerHTML = `<h1>JS DOM</h1>`;
+
+const h1 = document.createElement("h1");
+h1.innerText = "Ultimate JS";
+h1.innerText = "Ultimate DOM";
+
+app.append(h1);
+
+console.log(app.innerHTML);
+console.log(app.innerText);
+console.log(app.textContent);
+```
