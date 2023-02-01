@@ -497,3 +497,37 @@ button.style.fontSize = "22px";
 
 console.log(button.style.fontSize);
 ```
+
+#### Setting and Getting Classes
+
+```js
+app.innerHTML = `
+<h1>JS DOM</h1>
+<button type="button" class='one two'>
+Click Me!
+</button>
+`;
+
+const button = document.querySelector("button");
+
+//Old way : Set
+button.className += " three";
+
+//Old way : Get
+console.log(button.className.split(" "));
+
+//New way : ClassList
+//Add
+button.classList.add("four");
+
+//remove
+button.classList.remove("one");
+
+//Toggle
+button.classList.toggle("five");
+setTimeout(() => button.classList.toggle("five"), 2500);
+
+//Replace
+
+button.classList.replace("two", "six");
+```
