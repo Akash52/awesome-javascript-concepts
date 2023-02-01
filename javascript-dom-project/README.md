@@ -453,3 +453,26 @@ const input = document.querySelector("input");
 input.value = 2;
 console.log(parseInt(input.value, 10));
 ```
+
+#### Setting and Getting HTML Attributes
+
+```js
+app.innerHTML = `
+<h1>JS DOM</h1>
+<button type="button">
+Close Me
+</button>
+`;
+
+const button = document.querySelector("button");
+
+//SET
+button.setAttribute("aria-label", "Close this Modal");
+
+//GET
+const value = button.getAttribute("aria-label");
+console.log(value);
+
+//.attributes
+console.log(button.attributes["aria-label"]);
+```
