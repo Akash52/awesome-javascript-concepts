@@ -476,3 +476,24 @@ console.log(value);
 //.attributes
 console.log(button.attributes["aria-label"]);
 ```
+
+#### Setting and Getting Inline Styles
+
+```js
+app.innerHTML = `
+<button type="button">
+Click Me
+</button>
+`;
+
+//<button style="padding : 25px;margin:10px 0;">
+const button = document.querySelector("button");
+
+//CSSText
+button.style.cssText = "padding : 25px; margin: 10px 0px";
+
+//direct property access
+button.style.fontSize = "22px";
+
+console.log(button.style.fontSize);
+```
