@@ -413,3 +413,28 @@ console.log(item.parentElement);
 console.log(item.closest("#app"));
 console.log(item.closest("body"));
 ```
+
+#### Finding Sibling Elements
+
+```js
+app.innerHTML = `
+<h1>JS DOM</h1>
+<ul id="list">
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+</ul>
+`;
+
+const listItem = document.querySelector("#list li");
+console.log(listItem);
+
+//Any DOM Nodes
+console.log(listItem.nextSibling);
+console.log(listItem.previousSibling);
+
+//Any Element Nodes
+console.log(listItem.nextElementSibling);
+console.log(listItem.previousElementSibling);
+```
