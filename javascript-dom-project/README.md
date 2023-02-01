@@ -438,3 +438,18 @@ console.log(listItem.previousSibling);
 console.log(listItem.nextElementSibling);
 console.log(listItem.previousElementSibling);
 ```
+
+## Attributes, Styles and Classes
+
+#### Element Properties versus HTML Attributes
+
+```js
+app.innerHTML = `
+<h1>JS DOM</h1>
+<input type="text" />
+`;
+
+const input = document.querySelector("input");
+input.value = 2;
+console.log(parseInt(input.value, 10));
+```
