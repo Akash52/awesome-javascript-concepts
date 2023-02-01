@@ -531,3 +531,27 @@ setTimeout(() => button.classList.toggle("five"), 2500);
 
 button.classList.replace("two", "six");
 ```
+
+## Events and Event Listeners
+
+### Adding Event Listeners and Event Object
+
+```js
+app.innerHTML = `
+<button type="button">Click Me</button>
+`;
+
+const button = document.querySelector("button");
+
+function handleClick(event) {
+  console.log(this, event.target);
+}
+
+button.addEventListener("click", handleClick);
+
+//arrow functions
+
+button.addEventListener("dblclick", (event) => {
+  console.log(this, event.targ, "Double-Clicked");
+});
+```
