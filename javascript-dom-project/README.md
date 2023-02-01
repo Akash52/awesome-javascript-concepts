@@ -555,3 +555,28 @@ button.addEventListener("dblclick", (event) => {
   console.log(this, event.targ, "Double-Clicked");
 });
 ```
+
+#### Removing Event Listeners
+
+```js
+app.innerHTML = `
+<button type="button">Click Me</button>
+`;
+
+const button = document.querySelector("button");
+
+function handleClickOnce(event) {
+  console.log(event.target);
+  button.removeEventListener("click", handleClickOnce);
+}
+
+button.addEventListener("click", handleClickOnce);
+
+button.addEventListener(
+  "dblclick",
+  () => {
+    console.log("Double Click");
+  },
+  { once: true }
+);
+```
