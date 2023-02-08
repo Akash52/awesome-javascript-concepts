@@ -611,3 +611,66 @@ three.addEventListener("click", (event) => console.log(event), {
   capture: true,
 });
 ```
+
+#### Preventing Default Event Actions
+
+```js
+app.innerHTML = `
+<h1>JS DOM</h1>
+<form>
+    <label>
+    Sign-up Email
+    <input type="email">
+    </label>
+    <label>I Agree to the terms
+    <input type="checkbox">
+    </label>
+</form>
+`;
+
+const form = document.querySelector("form");
+const email = form.querySelector('input[type="email"]');
+const checkbox = form.querySelector('input[type="checkbox"]');
+
+function hadleSubmit(event) {
+  event.preventDefault();
+  console.log(email.value, checkbox.checked);
+}
+
+form.addEventListener("submit", hadleSubmit);
+```
+
+####
+
+```js
+app.innerHTML = `
+<h1>JavaScript</h1>
+<button type="button">
+    Add Item
+</button>
+<ul id="list">
+    <li>Item 1</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+</ul>    
+`;
+
+const button = document.querySelector("button");
+const list = document.querySelector("#list");
+
+function handleClick(event) {
+  if (event.target.nodeName.toLowerCase() != "li") {
+    return;
+  }
+  console.log(event.target.innerText);
+}
+
+list.addEventListener("click", handleClick);
+
+button.addEventListener("click", () => {
+  const items = list.querySelector("li");
+  const li = document.createElement("li");
+  li.innerText = `Item ${items.length + 1}`;
+  list.append(li);
+});
+```
