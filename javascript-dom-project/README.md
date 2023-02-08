@@ -674,3 +674,26 @@ button.addEventListener("click", () => {
   list.append(li);
 });
 ```
+
+#### Keyboard Events
+
+```js
+app.innerHTML = `
+<h1>JS DOM</h1>`;
+
+document.addEventListener("keydown", (event) => {
+  //   console.log(event.key, event.code);
+  switch (event.key) {
+    case "ArrowUp": {
+      console.log("Up!");
+      event.preventDefault();
+      break;
+    }
+    case "ArrowDown": {
+      console.log("Down!");
+      event.preventDefault();
+      break;
+    }
+  }
+});
+```
