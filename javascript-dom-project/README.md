@@ -697,3 +697,32 @@ document.addEventListener("keydown", (event) => {
   }
 });
 ```
+
+### Forms and Events
+
+#### Accessing Forms and Elements
+
+```js
+app.innerHTML = `
+<h1>JavaScript</h1>
+<form name="order">
+    <label>
+    Your Name
+    <input type="text" name="fullname">
+    </label>
+</form>
+`;
+
+const form = document.forms.order;
+
+const { fullname } = form.elements;
+
+function handleInput(event) {
+  //accessing value
+  console.log(event.target.value);
+}
+
+fullname.addEventListener("input", handleInput);
+
+console.log(fullname);
+```
