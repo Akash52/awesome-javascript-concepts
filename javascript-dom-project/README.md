@@ -726,3 +726,47 @@ fullname.addEventListener("input", handleInput);
 
 console.log(fullname);
 ```
+
+#### Form Submit Event and FormData
+
+```js
+app.innerHTML = `
+<h1>JavaScript</h1>
+<form name="order">
+    <label>
+    Your Name
+    <input type="text" name="fullname">
+    </label>
+    <label>
+        Which pizza would you like ?
+        <select name="pizza">
+            <option value="xyz">xyz</option>
+            <option value="xya">xya</option>
+            <option value="xyb">xyb</option>
+        </select>
+    </label>
+    <button type="submit">
+        Submit
+    </button>
+</form>
+`;
+
+const form = document.forms.order;
+
+function handleSubmit(event) {
+  event.preventDefault();
+  console.log(new FormData(event.target));
+}
+
+function handleFormData(event) {
+  console.log([...event.formData]);
+  console.log([...event.formData.values()]);
+  const entries = event.formData.entries();
+  for (const entry of entries) {
+    console.log(entry);
+  }
+}
+
+form.addEventListener("submit", handleSubmit);
+form.addEventListener("formdata", handleFormData);
+```
