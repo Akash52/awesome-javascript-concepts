@@ -1073,3 +1073,21 @@ function init() {
 }
 init();
 ```
+
+####
+
+```js
+function renderTodos(todos) {
+  let todoString = "";
+  todos.forEach((todo, index) => {
+    todoString += `
+    <li data-id="${index}">
+        <input type="checkbox">
+        <span>${todo.label}</span>
+        <button type="button"></button>
+    </li>
+    `;
+  });
+  list.innerHTML = todoString;
+}
+```
