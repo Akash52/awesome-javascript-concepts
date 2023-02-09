@@ -6,7 +6,7 @@ app.innerHTML = `
 <div class="todos-header">
 <h3 class="todos-title">Todo List</h3>
 <div>
-    <p>You have <span class="todos-count"></span></p>
+    <p>You have <span class="todos-count">0</span> items</p>
     <button type="button" class="todos-clear" style="display:none;">
         Clear Completed
     </button>
@@ -28,6 +28,7 @@ let todos = [];
 //Selectors
 const root = document.querySelector(".todos");
 const list = root.querySelector(".todos-list");
+const count = root.querySelector(".todos-count");
 const form = document.forms.todos;
 const input = form.elements.todo;
 
@@ -36,14 +37,31 @@ function renderTodos(todos) {
   let todoString = "";
   todos.forEach((todo, index) => {
     todoString += `
-    <li data-id="${index}">
-        <input type="checkbox">
+    <li data-id="${index}"${todo.complete ? ' class="todos-complete"' : ""} >
+        <input type="checkbox"${todo.complete ? " checked" : ""}>
         <span>${todo.label}</span>
         <button type="button"></button>
     </li>
     `;
   });
   list.innerHTML = todoString;
+  count.innerText = todos.filter((todo) => !todo.complete).length;
+}
+
+function updateTodo(event) {
+  const id = parseInt(event.target.parentNode.getAttribute("data-id"), 10);
+  const complete = event.target.checked;
+  todos = todos.map((todo, index) => {
+    if (index === id) {
+      return {
+        ...todo,
+        complete,
+      };
+    }
+    return todo;
+  });
+  console.log(todos);
+  renderTodos(todos);
 }
 
 function addTodo(event) {
@@ -65,5 +83,7 @@ function addTodo(event) {
 function init() {
   //Add Todo
   form.addEventListener("submit", addTodo);
+  //Update Todo
+  list.addEventListener("change", updateTodo);
 }
 init();
