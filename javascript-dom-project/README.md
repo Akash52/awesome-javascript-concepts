@@ -992,3 +992,22 @@ checkbox.addEventListener("change", function () {
   }
 });
 ```
+
+#### Handling Select Elements
+
+```js
+app.innerHTML = `
+<h1>JavaScript</h1>
+<select id="colors">
+  <option value="red">Red</option>
+  <option value="blue">Blue</option>
+  <option value="green">Green</option>
+</select>
+`;
+
+const select = document.querySelector("#colors");
+select.addEventListener("change", function () {
+  const selectedOption = select.options[select.selectedIndex];
+  console.log(selectedOption.value);
+});
+```
