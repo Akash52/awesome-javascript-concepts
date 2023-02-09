@@ -48,6 +48,21 @@ function renderTodos(todos) {
   count.innerText = todos.filter((todo) => !todo.complete).length;
 }
 
+function addTodo(event) {
+  event.preventDefault();
+  const label = input.value.trim();
+  const complete = false;
+  todos = [
+    ...todos,
+    {
+      label,
+      complete,
+    },
+  ];
+  renderTodos(todos);
+  input.value = "";
+}
+
 function updateTodo(event) {
   const id = parseInt(event.target.parentNode.getAttribute("data-id"), 10);
   const complete = event.target.checked;
@@ -64,19 +79,16 @@ function updateTodo(event) {
   renderTodos(todos);
 }
 
-function addTodo(event) {
-  event.preventDefault();
-  const label = input.value.trim();
-  const complete = false;
-  todos = [
-    ...todos,
-    {
-      label,
-      complete,
-    },
-  ];
-  renderTodos(todos);
-  input.value = "";
+function deleteTodo(event) {
+  if (event.target.nodeName.toLowerCase() != "button") {
+    return;
+  }
+  const id = parseInt(event.target.parentNode.getAttribute("data-id"), 10);
+  const label = event.target.previousElementSibling.innerText;
+  if (window.confirm(`Delete ${label}?`)) {
+    todos = todos.filter((todo, index) => index !== id);
+    renderTodos(todos);
+  }
 }
 
 //init
@@ -85,5 +97,7 @@ function init() {
   form.addEventListener("submit", addTodo);
   //Update Todo
   list.addEventListener("change", updateTodo);
+  //Delete Todo
+  list.addEventListener("click", deleteTodo);
 }
 init();

@@ -1162,3 +1162,19 @@ function init() {
 }
 init();
 ```
+
+#### Deleting Items from State
+
+```js
+function deleteTodo(event) {
+  if (event.target.nodeName.toLowerCase() != "button") {
+    return;
+  }
+  const id = parseInt(event.target.parentNode.getAttribute("data-id"), 10);
+  const label = event.target.previousElementSibling.innerText;
+  if (window.confirm(`Delete ${label}?`)) {
+    todos = todos.filter((todo, index) => index !== id);
+    renderTodos(todos);
+  }
+}
+```
