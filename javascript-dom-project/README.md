@@ -898,3 +898,40 @@ function handleSubmit(event) {
 
 form.addEventListener("submit", handleSubmit);
 ```
+
+#### Handling Input Elements
+
+```js
+app.innerHTML = `
+<h1>JavaScript</h1>
+<form name="example">
+    <input type="text" name="myInput" value="Hello">
+</form>
+`;
+
+const form = document.forms.example;
+const input = form.myInput;
+
+//1. Properties that are useful
+console.dir(input);
+//Set
+input.value = "GoodBye";
+// input.readOnly = true;
+// input.disabled = true;
+
+//Get
+console.log(input.value);
+
+//2. Events
+//other events : cut ,copy and paste
+input.addEventListener("focus", () => console.log("Foucs"));
+input.addEventListener("blur", () => console.log("Blur"));
+input.addEventListener("input", () => console.log("Input"));
+input.addEventListener("change", () => console.log("Change"));
+
+//3. Methods
+//focus an input
+
+input.focus();
+setTimeout(() => input.blur(), 2500);
+```
