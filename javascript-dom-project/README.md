@@ -1037,3 +1037,39 @@ app.innerHTML = `
 </div>
 `;
 ```
+
+#### State Initialization and Submit Events
+
+```js
+//State
+
+let todos = [];
+
+//Selectors
+
+const form = document.forms.todos;
+const input = form.elements.todo;
+
+//functions
+function addTodo(event) {
+  event.preventDefault();
+  const label = input.value.trim();
+  const complete = false;
+  todos = [
+    ...todos,
+    {
+      label,
+      complete,
+    },
+  ];
+  console.log(todos);
+  input.value = "";
+}
+
+//init
+function init() {
+  //Add Todo
+  form.addEventListener("submit", addTodo);
+}
+init();
+```
