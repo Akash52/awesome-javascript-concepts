@@ -973,3 +973,22 @@ container.addEventListener("change", () => {
   console.log(checked);
 });
 ```
+
+#### Handling Checkbox Input Elements
+
+```js
+app.innerHTML = `
+<h1>JavaScript</h1>
+    <input type="checkbox" id="checkbox">
+    <label for="checkbox">Subscribe to Newsletter</label>
+`;
+
+const checkbox = document.querySelector("#checkbox");
+checkbox.addEventListener("change", function () {
+  if (checkbox.checked) {
+    alert("You have subscribed to the newsletter.");
+  } else {
+    alert("You have unsubscribed from the newsletter.");
+  }
+});
+```
