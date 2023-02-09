@@ -829,3 +829,72 @@ function handleSubmit(event) {
 
 form.addEventListener("submit", handleSubmit);
 ```
+
+#### Posting FormData via Fetch API
+
+```js
+app.innerHTML = `
+<h1>JavaScript</h1>
+<form name="order">
+    <label>
+    Your Name
+    <input type="text" name="fullname">
+    </label>
+    <label>
+        Which pizza would you like ?
+        <select name="pizza">
+            <option value="xyz">xyz</option>
+            <option value="xya">xya</option>
+            <option value="xyb">xyb</option>
+        </select>
+    </label>
+    <div>
+      What size?
+      <label>
+        small
+        <input type="radio" name="size" value="small" checked>
+      </label>
+      <label>
+        medium
+        <input type="radio" name="size" value="medium">
+      </label>
+      <label>
+        large
+        <input type="radio" name="size" value="large">
+      </label>
+    </div>
+    <label>
+      Quantity
+      <input type="number" name="quantity" value="1">
+    </label>
+    <button type="submit">
+        Submit
+    </button>
+</form>
+`;
+
+const form = document.forms.order;
+
+function handleSubmit(event) {
+  event.preventDefault();
+  const formData = new FormData(event.target);
+  //query String
+  const asString = new URLSearchParams(formData).toString();
+  console.log(asString);
+  //JSON
+  const asJSON = JSON.stringify(Object.fromEntries(formData));
+  console.log(asJSON);
+
+  fetch("/fakeapi", {
+    method: "post",
+    headers: {
+      //   "Content-Type": "application/x-www-form-urlencoded",
+      "Content-Type": "application/json",
+    },
+    // body: asString,
+    body: asJSON,
+  });
+}
+
+form.addEventListener("submit", handleSubmit);
+```
