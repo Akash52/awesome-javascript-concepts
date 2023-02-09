@@ -935,3 +935,41 @@ input.addEventListener("change", () => console.log("Change"));
 input.focus();
 setTimeout(() => input.blur(), 2500);
 ```
+
+#### Handling Radio Input Elements
+
+```js
+app.innerHTML = `
+<h1>JavaScript</h1>
+<form name="example">
+<div class="container">
+    <input type="radio" id="red" name="color" value="red" checked>
+    <label for="red">Red</label>
+
+    <input type="radio" id="blue" name="color" value="blue">
+    <label for="blue">Blue</label>
+
+    <input type="radio" id="green" name="color" value="green">
+    <label for="green">Green</label>
+</div>
+</form>
+`;
+
+const form = document.forms.example;
+const radios = [...form.elements.color];
+
+//1. Properties that are useful
+radios.forEach((radio) => {
+  console.log(radio.value);
+  console.log(radio.checked);
+});
+
+//2. Events
+
+const container = form.querySelector(".container");
+
+container.addEventListener("change", () => {
+  const checked = radios.find((radio) => radio.checked).value;
+  console.log(checked);
+});
+```
