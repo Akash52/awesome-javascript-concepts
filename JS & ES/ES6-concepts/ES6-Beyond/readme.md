@@ -1,4 +1,4 @@
-### 01 Let and Const
+### Let and Const
 
 ```js
 what is defferent between let and const
@@ -116,7 +116,7 @@ const hero = {
 };
 console.log(hero.getName());
 ```
-### 03 Template Literals
+### Template Literals
 ```js
 // without template literals
 
