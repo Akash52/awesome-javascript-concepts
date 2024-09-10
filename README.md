@@ -1,3 +1,30 @@
+enum VoteTally {
+  MAJORITY = 'MAJORITY',
+  NO_MAJORITY = 'NO_MAJORITY',
+  NO_VOTE = 'NO_VOTE',
+  NONE = ''
+}
+
+enum MultipleCommitteeVoteTally {
+  VOTE_MAJORITY = 'MAJORITY',
+  VOTE_NON_MAJORITY = 'NO_MAJORITY',
+  NO_VOTE = 'NO_VOTE',
+  NONE = ''
+}
+
+const MultipleCommitteeOutcomeVoteColumnBridge: Record<MultipleCommitteeVoteTally, VoteTally> = {
+  [MultipleCommitteeVoteTally.VOTE_MAJORITY]: VoteTally.MAJORITY,
+  [MultipleCommitteeVoteTally.VOTE_NON_MAJORITY]: VoteTally.NO_MAJORITY,
+  [MultipleCommitteeVoteTally.NO_VOTE]: VoteTally.NO_VOTE,
+  [MultipleCommitteeVoteTally.NONE]: VoteTally.NONE
+};
+
+const eventValue = 'VOTE_MAJORITY';
+const selectedVoteValue = MultipleCommitteeOutcomeVoteColumnBridge[MultipleCommitteeVoteTally[eventValue as keyof typeof MultipleCommitteeVoteTally]];
+
+console.log(selectedVoteValue);
+
+
 ```javascript
 // src/services/api/httpClient.ts
 import axios, { AxiosInstance } from 'axios'
